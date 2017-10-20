@@ -21,14 +21,26 @@
         tools:text="Betalen" />
 
     <Button
+        android:id="@+id/btnAccount"
+        android:layout_width="162dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Account"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOntvangen"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        tools:text="Account" />
+
+    <Button
         android:id="@+id/btnOntvangen"
         android:layout_width="162dp"
         android:layout_height="105dp"
-        android:text="Ontvangen"
-        tools:ignore="HardcodedText,RtlHardcoded"
-        tools:text="Ontvangen"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Ontvangen"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp" />
+        tools:ignore="HardcodedText,RtlHardcoded"
+        tools:text="Ontvangen" />
 </android.support.constraint.ConstraintLayout>

@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1508510801579"
+    timestamp="1508514802303"
     token="6687959494743753142"
     verifier="COMPATIBLE" >
 
@@ -69,8 +69,22 @@
             type="SPLIT_MAIN" />
     </build>
     <build
+        build-mode="COLD"
+        timestamp="1508514688585"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
         build-mode="HOT_WARM"
-        timestamp="1508510801579"
+        timestamp="1508514802303"
         verifier="COMPATIBLE" >
         <artifact
             location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
