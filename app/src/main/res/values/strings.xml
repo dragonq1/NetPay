@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NetPay</string>
+    <string name="gebruiksnaam">Gebruiksnaam</string>
+    <string name="wachtwoord">Wachtwoord</string>
+</resources>
