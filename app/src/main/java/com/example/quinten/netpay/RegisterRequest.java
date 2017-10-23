@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class RegisterRequest extends StringRequest {
 
-    private static final String REGISTER_REQUEST_URL = "https://server.sbwebnode.nl:2222/CMD_FILE_MANAGER/domains/dragonq1.be/public_html/register.php";
+    private static final String REGISTER_REQUEST_URL = "http://37.34.58.100/~dragv/register.php";
     private Map<String, String> params;
 
     public RegisterRequest(String gebruikersnaam, String voornaam, String achternaam, String wachtwoord, Response.Listener<String> listener) {
@@ -22,8 +22,7 @@ public class RegisterRequest extends StringRequest {
     }
 
     @Override
-    public Map<String, String> getParams() {
-        return params;
+    public Map<String, String> getParams() { return params;
     }
 
 }
