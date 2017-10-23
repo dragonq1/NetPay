@@ -609,8 +609,6 @@ int id customPanel 0x7f0b003f
 int id decor_content_parent 0x7f0b004d
 int id default_activity_button 0x7f0b0032
 int id disableHome 0x7f0b0015
-int id editText3 0x7f0b0067
-int id editText4 0x7f0b0066
 int id edit_query 0x7f0b0051
 int id end 0x7f0b0023
 int id end_padder 0x7f0b007e
@@ -684,6 +682,8 @@ int id titleDividerNoCustom 0x7f0b0044
 int id title_template 0x7f0b0042
 int id top 0x7f0b002b
 int id topPanel 0x7f0b0041
+int id txtAchternaam 0x7f0b0067
+int id txtGebruikersnaam 0x7f0b0066
 int id txtNaam 0x7f0b0060
 int id txtVoornaam 0x7f0b0065
 int id txtWachtwoord 0x7f0b005f

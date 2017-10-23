@@ -2344,8 +2344,6 @@ containing a value of this type.
         public static final int decor_content_parent=0x7f0b004d;
         public static final int default_activity_button=0x7f0b0032;
         public static final int disableHome=0x7f0b0015;
-        public static final int editText3=0x7f0b0067;
-        public static final int editText4=0x7f0b0066;
         public static final int edit_query=0x7f0b0051;
         public static final int end=0x7f0b0023;
         public static final int end_padder=0x7f0b007e;
@@ -2419,6 +2417,8 @@ containing a value of this type.
         public static final int title_template=0x7f0b0042;
         public static final int top=0x7f0b002b;
         public static final int topPanel=0x7f0b0041;
+        public static final int txtAchternaam=0x7f0b0067;
+        public static final int txtGebruikersnaam=0x7f0b0066;
         public static final int txtNaam=0x7f0b0060;
         public static final int txtVoornaam=0x7f0b0065;
         public static final int txtWachtwoord=0x7f0b005f;

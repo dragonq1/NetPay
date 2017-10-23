@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\user\\OneDrive\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
-        "source": "C:\\Users\\user\\OneDrive\\NetPay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
-        "source": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\OneDrive\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\user\\OneDrive\\NetPay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
-        "source": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]
