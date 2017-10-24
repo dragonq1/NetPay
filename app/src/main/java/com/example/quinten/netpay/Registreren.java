@@ -32,7 +32,7 @@ public class Registreren extends AppCompatActivity {
         final Button btnRegister = (Button) findViewById(R.id.btnRegister);
         final ProgressBar prgRegistreren = (ProgressBar) findViewById(R.id.prbRegistreren);
 
-        //Progressbar onzichtbaar maken
+        //ProgressSpiner onzichtbaar maken
         prgRegistreren.setVisibility(View.INVISIBLE);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +45,7 @@ public class Registreren extends AppCompatActivity {
                 final String wachtwoord = txtWachtwoord.getText().toString();
 
                 if (!(gebruikersnaam.equals("") || voornaam.equals("") || achternaam.equals("") || wachtwoord.equals(""))) {
-                    //Progressbar zichtbaar
+                    //ProgressSpiner zichtbaar maken
                     prgRegistreren.setVisibility(View.VISIBLE);
                     //Registratie aanvraag
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -78,7 +78,7 @@ public class Registreren extends AppCompatActivity {
                 }
             }
         });
-        //Progressbar onzichtbaar maken
+        //ProgressSpiner onzichtbaar maken
         prgRegistreren.setVisibility(View.INVISIBLE);
 
 
