@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                     String strAchternaamResp = jsonReponse.getString("Achternaam");
                                     String strSaldoResp = jsonReponse.getString("Saldo");
 
+
                                     //Menu openen en gebruikersinformatie doorgeven
                                     Intent intent = new Intent(getApplicationContext(), Menu.class);
                                     intent.putExtra("gebruikersnaam", strGebruikersnaamResp);
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                                     intent.putExtra("achternaam", strAchternaamResp);
                                     intent.putExtra("saldo", strSaldoResp);
                                     startActivity(intent);
+
 
                                     //ProgressSpiner onzichtbaar maken
                                     prgLogin.setVisibility(View.INVISIBLE);
