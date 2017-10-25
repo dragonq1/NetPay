@@ -1,9 +1,11 @@
 package com.example.quinten.netpay;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Menu extends Activity {
 
@@ -18,7 +20,18 @@ public class Menu extends Activity {
 
 
         //Vars
-        Button btnOntvangen = (Button) findViewById(R.id.btnOntvangen);
+        final TextView txtWelkom =  findViewById(R.id.txtWelkom);
+        final TextView txtWelkomActie = findViewById(R.id.txtWelkomActie);
+        final Button btnBetalen = (Button) findViewById(R.id.btnBetalen);
+        final Button btnOntvangen = (Button) findViewById(R.id.btnOntvangen);
+        final Button btnAccount = (Button) findViewById(R.id.btnAccount);
+
+        //Welkom bericht personaliseren
+        Intent intent = getIntent();
+        String strVoornaam = intent.getStringExtra("voornaam");
+        txtWelkom.setText("Welkom " + strVoornaam + "!");
+
+
 
     }
 }

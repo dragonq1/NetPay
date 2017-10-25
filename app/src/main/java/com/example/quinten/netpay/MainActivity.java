@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                                 boolean success = jsonReponse.getBoolean("success");
 
                                 if (success) {
-                                    //Terugkregen gebruikersinfo ophalen
+                                    //Terugekregen gebruikersinfo ophalen
                                     String strGebruikersnaamResp = jsonReponse.getString("Gebruikersnaam");
                                     String strVoornaamResp = jsonReponse.getString("Voornaam");
                                     String strAchternaamResp = jsonReponse.getString("Achternaam");
