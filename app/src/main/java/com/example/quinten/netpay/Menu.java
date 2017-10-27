@@ -26,10 +26,14 @@ public class Menu extends Activity {
         final Button btnOntvangen = (Button) findViewById(R.id.btnOntvangen);
         final Button btnAccount = (Button) findViewById(R.id.btnAccount);
 
-        //Welkom bericht personaliseren
         Intent intent = getIntent();
+
+        //Welkom bericht personaliseren
         String strVoornaam = intent.getStringExtra("voornaam");
-        txtWelkom.setText("Welkom " + strVoornaam + "!");
+        String strWelkomBericht = strVoornaam.substring(0,1).toUpperCase() + strVoornaam.substring(1) + "!";
+        strWelkomBericht = strWelkomBericht.replace(" ", "");
+        strWelkomBericht = "Welkom " + strWelkomBericht;
+        txtWelkom.setText(strWelkomBericht);
 
 
 
