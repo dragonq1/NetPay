@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1509137120700"
+    timestamp="1509290350788"
     token="-2469872129368405824"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -24,12 +24,15 @@
         duration="0" />
 
     <artifact
+        location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
         location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\outputs\apk\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1509137031516"
+        timestamp="1509288604367"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -70,8 +73,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1509137120700"
+        timestamp="1509289763055"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1509290350788"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
         <artifact
             location="D:\Mappen\Documenten\AndroidProjects\NetPay\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
