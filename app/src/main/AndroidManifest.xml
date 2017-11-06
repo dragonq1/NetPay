@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".Menu" />
         <activity android:name=".Registreren" />
-        <activity android:name=".Account"></activity>
+        <activity android:name=".Account" />
+        <activity android:name=".WachtwoordVeranderen"></activity>
     </application>
 
 </manifest>

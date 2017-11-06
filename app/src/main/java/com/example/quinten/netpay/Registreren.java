@@ -29,6 +29,7 @@ public class Registreren extends AppCompatActivity {
         final EditText txtAchternaam = (EditText) findViewById(R.id.txtAchternaam);
         final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtGebruikersnaam);
         final EditText txtWachtwoord = (EditText) findViewById(R.id.txtWachtwoord);
+        final EditText txtWachtwoordH = (EditText) findViewById(R.id.txtWachtwoordHerhalen);
         final Button btnRegister = (Button) findViewById(R.id.btnRegister);
         final ProgressBar prgRegistreren = (ProgressBar) findViewById(R.id.prbRegistreren);
 
@@ -43,36 +44,42 @@ public class Registreren extends AppCompatActivity {
                 final String voornaam = txtVoornaam.getText().toString();
                 final String achternaam = txtAchternaam.getText().toString();
                 final String wachtwoord = txtWachtwoord.getText().toString();
+                final String wachtwoordH = txtWachtwoordH.getText().toString();
 
-                if (!(gebruikersnaam.equals("") || voornaam.equals("") || achternaam.equals("") || wachtwoord.equals(""))) {
-                    //ProgressSpiner zichtbaar maken
-                    prgRegistreren.setVisibility(View.VISIBLE);
-                    //Registratie aanvraag
-                    Response.Listener<String> responseListener = new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            try {
-                                JSONObject jsonResponse = new JSONObject(response);
-                                boolean success = jsonResponse.getBoolean("success");
+                if (!(gebruikersnaam.equals("") || voornaam.equals("") || achternaam.equals("") || wachtwoord.equals("")
+                        || wachtwoordH.equals(""))) {
+                    if((wachtwoord.equals(wachtwoordH))) {
+                        //ProgressSpiner zichtbaar maken
+                        prgRegistreren.setVisibility(View.VISIBLE);
+                        //Registratie aanvraag
+                        Response.Listener<String> responseListener = new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                try {
+                                    JSONObject jsonResponse = new JSONObject(response);
+                                    boolean success = jsonResponse.getBoolean("success");
 
-                                if (success) {
-                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                    startActivity(intent);
-                                    Toast.makeText(getApplicationContext(), "Registratie succesvol!", Toast.LENGTH_LONG).show();
-                                } else {
-                                    Toast.makeText(getApplicationContext(), "Fout bij registreren", Toast.LENGTH_LONG).show();
+                                    if (success) {
+                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        startActivity(intent);
+                                        Toast.makeText(getApplicationContext(), "Registratie succesvol!", Toast.LENGTH_LONG).show();
+                                    } else {
+                                        Toast.makeText(getApplicationContext(), "Fout bij registreren", Toast.LENGTH_LONG).show();
+                                    }
+
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                    Toast.makeText(getApplicationContext(), "ERROR" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
                                 }
-
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                                Toast.makeText(getApplicationContext(), "ERROR" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
                             }
-                        }
-                    };
+                        };
 
-                    RegisterRequest registerRequest = new RegisterRequest(gebruikersnaam, voornaam, achternaam, wachtwoord, responseListener);
-                    RequestQueue queue = Volley.newRequestQueue(Registreren.this);
-                    queue.add(registerRequest);
+                        RegisterRequest registerRequest = new RegisterRequest(gebruikersnaam, voornaam, achternaam, wachtwoord, responseListener);
+                        RequestQueue queue = Volley.newRequestQueue(Registreren.this);
+                        queue.add(registerRequest);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Wachtwoorden komen niet overeen!", Toast.LENGTH_LONG).show();
+                    }
                 }else{
                     Toast.makeText(getApplicationContext(), "Vul alle velden in!", Toast.LENGTH_LONG).show();
                 }

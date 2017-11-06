@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                                     String strGebruikersnaamResp = jsonReponse.getString("Gebruikersnaam");
                                     String strVoornaamResp = jsonReponse.getString("Voornaam");
                                     String strAchternaamResp = jsonReponse.getString("Achternaam");
+                                    String strWachtwoordResp = jsonReponse.getString("Wachtwoord");
                                     String strSaldoResp = jsonReponse.getString("Saldo");
 
 
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                                     intent.putExtra("gebruikersnaam", strGebruikersnaamResp);
                                     intent.putExtra("voornaam", strVoornaamResp);
                                     intent.putExtra("achternaam", strAchternaamResp);
+                                    intent.putExtra("wachtwoord", strWachtwoordResp);
                                     intent.putExtra("saldo", strSaldoResp);
                                     startActivity(intent);
 

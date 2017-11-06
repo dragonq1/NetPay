@@ -33,6 +33,7 @@ public class Menu extends Activity {
         final String strAchternaam = intent.getStringExtra("achternaam");
         final String strGebruikersnaam = intent.getStringExtra("gebruikersnaam");
         final String strSaldo = intent.getStringExtra("saldo");
+        final String strWachtwoord = intent.getStringExtra("wachtwoord");
 
         //Welkom bericht personaliseren
 
@@ -51,6 +52,7 @@ public class Menu extends Activity {
                 intent.putExtra("voornaam", strVoornaam);
                 intent.putExtra("achternaam", strAchternaam);
                 intent.putExtra("saldo", strSaldo);
+                intent.putExtra("wachtwoord", strWachtwoord);
                 startActivity(intent);
             }
         });

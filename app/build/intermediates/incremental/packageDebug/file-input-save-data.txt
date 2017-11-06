@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Oct 29 16:19:15 CET 2017
+#Thu Nov 02 09:33:39 CET 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\notification_template_lines_media.xml
@@ -148,6 +148,7 @@
 136.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
 188.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
 111.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
+240.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
 163.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
 106.set=ANDROID_RESOURCE
 194.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_activity_chooser_view_list_item.xml
@@ -192,6 +193,7 @@
 104.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_simple_overlay_action_mode.xml
 233.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\abc_popup_menu_item_layout.xml
 156.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_action_tombstone.xml
+240.set=ANDROID_RESOURCE
 131.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml
 181.set=ANDROID_RESOURCE
 44.set=ANDROID_RESOURCE
@@ -430,7 +432,7 @@
 181.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
 121.set=ANDROID_RESOURCE
 227.set=ANDROID_RESOURCE
-count=240
+count=241
 27.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
 77.set=ANDROID_RESOURCE
 79.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -509,6 +511,7 @@ count=240
 205.set=ANDROID_RESOURCE
 188.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_part_chronometer.xml
 111.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_item_background_holo_light.xml
+240.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_wachtwoord_veranderen.xml
 163.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_vector_test.xml
 194.base=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_
 192.set=ANDROID_RESOURCE
