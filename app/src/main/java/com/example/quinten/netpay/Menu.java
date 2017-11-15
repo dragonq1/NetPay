@@ -2,11 +2,14 @@ package com.example.quinten.netpay;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+
+import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class Menu extends Activity {
 
@@ -27,32 +30,23 @@ public class Menu extends Activity {
         final Button btnOntvangen = (Button) findViewById(R.id.btnOntvangen);
         final Button btnAccount = (Button) findViewById(R.id.btnAccount);
 
-        //Doorgegegeven vars
-        Intent intent = getIntent();
-        final String strVoornaam = intent.getStringExtra("voornaam");
-        final String strAchternaam = intent.getStringExtra("achternaam");
-        final String strGebruikersnaam = intent.getStringExtra("gebruikersnaam");
-        final String strSaldo = intent.getStringExtra("saldo");
-        final String strWachtwoord = intent.getStringExtra("wachtwoord");
+        //Gegevens ophalen
+        SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+        String strVoornaam = settings.getString("voornaam", "");
+        String strAchternaam = settings.getString("achternaam", "");
+        //String strID = settings.getString("ID", "");
 
         //Welkom bericht personaliseren
-
         String strWelkomBericht = strVoornaam.substring(0,1).toUpperCase() + strVoornaam.substring(1) + "!";
         strWelkomBericht = strWelkomBericht.replace(" ", "");
-        strWelkomBericht = "Welkom " + strWelkomBericht;
+        strWelkomBericht = "Hallo " + strWelkomBericht;
         txtWelkom.setText(strWelkomBericht);
 
         //Button listeners
-
         btnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Account.class);
-                intent.putExtra("gebruikersnaam", strGebruikersnaam);
-                intent.putExtra("voornaam", strVoornaam);
-                intent.putExtra("achternaam", strAchternaam);
-                intent.putExtra("saldo", strSaldo);
-                intent.putExtra("wachtwoord", strWachtwoord);
                 startActivity(intent);
             }
         });

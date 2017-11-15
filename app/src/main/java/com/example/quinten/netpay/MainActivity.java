@@ -1,6 +1,7 @@
 package com.example.quinten.netpay;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,6 +18,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String USER_INFO = "UserInfo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         final ProgressBar prgLogin = (ProgressBar) findViewById(R.id.prbLogin);
         final EditText txtGebruiksnaam = (EditText)findViewById(R.id.txtNaam);
         final EditText txtWachtwoord = (EditText)findViewById(R.id.txtWachtwoord);
+
 
         //ProgressSpiner onzichtbaar maken
         prgLogin.setVisibility(View.INVISIBLE);
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     final String strGebruikersnaam = txtGebruiksnaam.getText().toString();
                     final String strWachtwoord = txtWachtwoord.getText().toString();
 
+
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -59,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 if (success) {
                                     //Terugekregen gebruikersinfo ophalen
+                                    String strID = jsonReponse.getString("ID");
                                     String strGebruikersnaamResp = jsonReponse.getString("Gebruikersnaam");
                                     String strVoornaamResp = jsonReponse.getString("Voornaam");
                                     String strAchternaamResp = jsonReponse.getString("Achternaam");
@@ -66,13 +71,19 @@ public class MainActivity extends AppCompatActivity {
                                     String strSaldoResp = jsonReponse.getString("Saldo");
 
 
-                                    //Menu openen en gebruikersinformatie doorgeven
+
+                                    //Menu openen en gebruikersinfo cachen
+                                    SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+                                    SharedPreferences.Editor editor = settings.edit();
+                                    editor.putString("ID", (strID));
+                                    editor.putString("gebruikersnaam", strGebruikersnaamResp);
+                                    editor.putString("voornaam", strVoornaamResp);
+                                    editor.putString("achternaam", strAchternaamResp);
+                                    editor.putString("wachtwoord", strWachtwoordResp);
+                                    editor.putString("saldo", strSaldoResp);
+                                    editor.apply();
+
                                     Intent intent = new Intent(getApplicationContext(), Menu.class);
-                                    intent.putExtra("gebruikersnaam", strGebruikersnaamResp);
-                                    intent.putExtra("voornaam", strVoornaamResp);
-                                    intent.putExtra("achternaam", strAchternaamResp);
-                                    intent.putExtra("wachtwoord", strWachtwoordResp);
-                                    intent.putExtra("saldo", strSaldoResp);
                                     startActivity(intent);
 
 

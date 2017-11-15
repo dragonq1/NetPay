@@ -1,11 +1,14 @@
 package com.example.quinten.netpay;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class Account extends AppCompatActivity {
 
@@ -23,13 +26,13 @@ public class Account extends AppCompatActivity {
         final Button btnTransacties = (Button) findViewById(R.id.btnTransacties);
         final Button btnWachtwoordV = (Button) findViewById(R.id.btnWachtwoordV);
 
-        //Doorgegegeven vars
-        Intent intent = getIntent();
-        final String strVoornaam = intent.getStringExtra("voornaam");
-        final String strAchternaam = intent.getStringExtra("achternaam");
-        final String strGebruikersnaam = intent.getStringExtra("gebruikersnaam");
-        final String strWachtwoord = intent.getStringExtra("wachtwoord");
-        String strSaldo = intent.getStringExtra("saldo");
+        //Gegevens ophalen
+        SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+        String strVoornaam = settings.getString("voornaam", "");
+        String strAchternaam = settings.getString("achternaam", "");
+        String strGebruikersnaam = settings.getString("gebruikersnaam", "");
+        String strWachtwoord = settings.getString("wachtwoord","");
+        String strSaldo = settings.getString("saldo","");
         strSaldo = "€" + strSaldo;
 
 
@@ -44,12 +47,18 @@ public class Account extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), WachtwoordVeranderen.class);
-                intent.putExtra("wachtwoord", strWachtwoord);
-                intent.putExtra("gebruikersnaam", strGebruikersnaam);
                 startActivity(intent);
             }
         });
 
+        //Transacties
+        btnTransacties.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Transacties.class);
+                startActivity(intent);
+            }
+        });
 
 
 

@@ -1,6 +1,7 @@
 package com.example.quinten.netpay;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -14,6 +15,8 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class WachtwoordVeranderen extends AppCompatActivity {
 
@@ -29,9 +32,10 @@ public class WachtwoordVeranderen extends AppCompatActivity {
         final EditText txtNieuwWachtwoord2 = (EditText) findViewById(R.id.txtNieuwWachtwoord2);
         final Button btnWachtwoordV = (Button) findViewById(R.id.btnWachtwoordV);
 
-        Intent intent = getIntent();
-        final String strGebruikersnaamResp = intent.getStringExtra("gebruikersnaam");
-        final String strOudWachtwoordResp = intent.getStringExtra("wachtwoord");
+        //Gegevens ophalen
+        SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+        final String strGebruikersnaamResp = settings.getString("gebruikersnaam", "");
+        final String strOudWachtwoordResp = settings.getString("wachtwoord","");
 
 
         btnWachtwoordV.setOnClickListener(new View.OnClickListener() {
