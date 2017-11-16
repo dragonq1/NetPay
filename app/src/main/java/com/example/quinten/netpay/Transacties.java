@@ -17,6 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
@@ -32,6 +33,8 @@ public class Transacties extends AppCompatActivity {
         final Button btnTraAct = (Button) findViewById(R.id.btnTransacties);
         final ListView lvLijst = (ListView) findViewById(R.id.lvLijst);
         final ArrayList<String> strLijst = new ArrayList<>();
+        SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+        final String strVoornaam = settings.getString("voornaam", "");
 
 
 
@@ -50,9 +53,18 @@ public class Transacties extends AppCompatActivity {
                             if (success) {
                                 int intTeller = 0;
                                 while ((jsonResponse.length() -1) > intTeller){
-                                    String strTest = jsonResponse.getString(String.valueOf(intTeller));
-                                    strLijst.add(strTest);
-                                    ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, strLijst);
+                                    String strResp = jsonResponse.getString(String.valueOf(intTeller));
+                                    StringTokenizer st = new StringTokenizer(strResp, "-");
+                                    String strBedrag = st.nextToken().trim();
+                                    String strOntvanger = st.nextToken().trim();
+                                    String strBetaler = st.nextToken().trim();
+                                    if(strVoornaam.equals(strOntvanger)) {
+                                        strLijst.add("+" + strBedrag + "EUR van " + strBetaler);
+                                    }else{
+                                        strLijst.add("-" + strBedrag + "EUR betaald aan " + strOntvanger);
+                                    }
+
+                                    ArrayAdapter adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, strLijst);
                                     lvLijst.setAdapter(adapter);
                                     intTeller++;
                                 }
