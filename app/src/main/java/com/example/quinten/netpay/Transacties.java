@@ -1,12 +1,14 @@
 package com.example.quinten.netpay;
 
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -35,6 +37,9 @@ public class Transacties extends AppCompatActivity {
         final ArrayList<String> strLijst = new ArrayList<>();
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
         final String strVoornaam = settings.getString("voornaam", "");
+        final ProgressBar progressBar = (ProgressBar) findViewById(R.id.prgTrans);
+        //Progresbar ontzichtbaar maken
+        progressBar.setVisibility(View.INVISIBLE);
 
 
 
@@ -44,6 +49,8 @@ public class Transacties extends AppCompatActivity {
                 //Listview leegmaken
                 strLijst.clear();
                 //Transacties ophalen
+                //Progresbar zichtbaar maken
+                progressBar.setVisibility(View.VISIBLE);
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -59,7 +66,7 @@ public class Transacties extends AppCompatActivity {
                                     String strOntvanger = st.nextToken().trim();
                                     String strBetaler = st.nextToken().trim();
                                     if(strVoornaam.equals(strOntvanger)) {
-                                        strLijst.add("+" + strBedrag + "EUR van " + strBetaler);
+                                        strLijst.add("+" + strBedrag + "EUR ontvangen van " + strBetaler);
                                     }else{
                                         strLijst.add("-" + strBedrag + "EUR betaald aan " + strOntvanger);
                                     }
@@ -68,8 +75,12 @@ public class Transacties extends AppCompatActivity {
                                     lvLijst.setAdapter(adapter);
                                     intTeller++;
                                 }
+                                //Progresbar ontzichtbaar maken
+                                progressBar.setVisibility(View.INVISIBLE);
                             } else {
                                 Toast.makeText(getApplicationContext(), "Fout bij ophalen van transacties!", Toast.LENGTH_LONG).show();
+                                //Progresbar ontzichtbaar maken
+                                progressBar.setVisibility(View.INVISIBLE);
                             }
 
 
@@ -77,6 +88,8 @@ public class Transacties extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                             Toast.makeText(getApplicationContext(), "ERROR!" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
+                            //Progresbar ontzichtbaar maken
+                            progressBar.setVisibility(View.INVISIBLE);
                         }
 
                     }
@@ -90,6 +103,8 @@ public class Transacties extends AppCompatActivity {
                 queue.add(transactiesRequest);
             }
         });
+        //Progresbar ontzichtbaar maken
+        progressBar.setVisibility(View.INVISIBLE);
 
 
     }

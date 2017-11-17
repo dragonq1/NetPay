@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\user\\.android\\build-cache\\4a10fdb2c389cde9cc779a1d7655c7ca1dc39cf6\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\user\\.android\\build-cache\\4a10fdb2c389cde9cc779a1d7655c7ca1dc39cf6\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\user\\.android\\build-cache\\4a10fdb2c389cde9cc779a1d7655c7ca1dc39cf6\\output\\res\\drawable-v21\\notification_action_background.xml"
+        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\user\\.android\\build-cache\\4a10fdb2c389cde9cc779a1d7655c7ca1dc39cf6\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable-v21\\notification_action_background.xml"
     }
 ]
