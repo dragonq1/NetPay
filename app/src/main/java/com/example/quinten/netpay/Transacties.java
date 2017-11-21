@@ -66,12 +66,13 @@ public class Transacties extends AppCompatActivity {
                                     String strOntvanger = st.nextToken().trim();
                                     String strBetaler = st.nextToken().trim();
                                     if(strVoornaam.equals(strOntvanger)) {
-                                        strLijst.add("+" + strBedrag + "EUR ontvangen van " + strBetaler);
+                                        strLijst.add("+" + strBedrag + " euro ontvangen van " + strBetaler);
+
                                     }else{
-                                        strLijst.add("-" + strBedrag + "EUR betaald aan " + strOntvanger);
+                                        strLijst.add("-" + strBedrag + " euro betaald aan " + strOntvanger);
                                     }
 
-                                    ArrayAdapter adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, strLijst);
+                                    ArrayAdapter adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_2, strLijst);
                                     lvLijst.setAdapter(adapter);
                                     intTeller++;
                                 }
