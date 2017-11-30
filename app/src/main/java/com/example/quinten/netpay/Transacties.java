@@ -1,15 +1,10 @@
 package com.example.quinten.netpay;
 
 import android.content.SharedPreferences;
-import android.database.DataSetObserver;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -21,12 +16,10 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
+
+import java.text.DateFormatSymbols;
 
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
@@ -80,11 +73,12 @@ public class Transacties extends AppCompatActivity {
                                     String strBedrag = st.nextToken().trim() + " EUR";
                                     String strOntvanger = st.nextToken();
                                     String strBetaler = st.nextToken().trim();
-                                    String strDatum = st.nextToken();
+                                    String strDatumDag = st.nextToken();
+                                    int intDatumMaand = Integer.parseInt(st.nextToken());
 
                                     //Datum omzetten
-
-
+                                    String strDatumMaand = new DateFormatSymbols().getMonths()[intDatumMaand-1];
+                                    String strDatum = strDatumDag + " " + strDatumMaand;
                                     //Geld ontvangen
                                     if(strVoornaam.equals(strOntvanger)) {
                                         strLijstBedrag.add("+" + strBedrag);

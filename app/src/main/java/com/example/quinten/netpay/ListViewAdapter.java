@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import static com.example.quinten.netpay.R.id.txtBetaler;
+
 public class ListViewAdapter extends BaseAdapter{
 
     Activity context;
@@ -51,16 +53,17 @@ public class ListViewAdapter extends BaseAdapter{
             convertView = inflator.inflate(R.layout.listview_transacties, null);
             holder = new ViewHolder();
             holder.txtDatum =  convertView.findViewById(R.id.txtDatum);
-            holder.txtBetaler =  convertView.findViewById(R.id.txtBetaler);
+            holder.txtBetaler =  convertView.findViewById(txtBetaler);
             holder.txtBedrag =  convertView.findViewById(R.id.txtBedrag);
 
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.txtDatum.setText(Datum[position]);
         holder.txtBetaler.setText(Betaler[position]);
+        holder.txtDatum.setText(Datum[position]);
         holder.txtBedrag.setText(Bedrag[position]);
+
 
 
 

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\herreboschq\\.android\\build-cache\\37e8ecf2957349116215175c51ea5d66db84f0d4\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\user\\.android\\build-cache\\dbb580555dba1c9bf5c5ffc66c30a6014eb57d04\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
