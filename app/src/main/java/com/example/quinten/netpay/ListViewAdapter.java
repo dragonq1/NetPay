@@ -50,9 +50,9 @@ public class ListViewAdapter extends BaseAdapter{
         if(convertView == null) {
             convertView = inflator.inflate(R.layout.listview_transacties, null);
             holder = new ViewHolder();
-            holder.txtDatum = (TextView) convertView.findViewById(R.id.txtDatum);
-            holder.txtBetaler = (TextView) convertView.findViewById(R.id.txtBetaler);
-            holder.txtBedrag = (TextView) convertView.findViewById(R.id.txtBedrag);
+            holder.txtDatum =  convertView.findViewById(R.id.txtDatum);
+            holder.txtBetaler =  convertView.findViewById(R.id.txtBetaler);
+            holder.txtBedrag =  convertView.findViewById(R.id.txtBedrag);
 
         }else{
             holder = (ViewHolder) convertView.getTag();

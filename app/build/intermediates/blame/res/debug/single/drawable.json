@@ -52,12 +52,12 @@
         "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
         "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\herreboschq\\.android\\build-cache\\61be46f21bc247d0d2201a1cd7cfad0f97098cda\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",

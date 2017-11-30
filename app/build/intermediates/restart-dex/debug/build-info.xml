@@ -6,37 +6,34 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1511270929030"
+    timestamp="1512032602657"
     token="-2298105774574400050"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="286" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="18" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="15" />
+        duration="0" />
     <task
         name="verifier"
-        duration="4" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
         build-mode="FULL"
-        timestamp="1511270551607"
+        timestamp="1512027732071"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
@@ -67,38 +64,129 @@
         <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1512028428920"
+        verifier="FIELD_TYPE_CHANGE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1511270641136"
+        timestamp="1512028588299"
         verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1511270641136\classes.dex"
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512028588299\classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1511270675332"
+        timestamp="1512028629376"
         verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1511270675332\classes.dex"
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512028629376\classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1511270894335"
+        timestamp="1512028711027"
         verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1511270894335\classes.dex"
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512028711027\classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1511270929030"
+        timestamp="1512028746878"
         verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\reload-dex\debug\classes.dex"
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512028746878\classes.dex"
             type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512029047036"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512029047036\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512030040403"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512030040403\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512030451041"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512030451041\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512030642539"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512030642539\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512030682105"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512030682105\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512030699490"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512030699490\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512030727654"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512030727654\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512031342023"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512031342023\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512032240899"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512032240899\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1512032602657"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
