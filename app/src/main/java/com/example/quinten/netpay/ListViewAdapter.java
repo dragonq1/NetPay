@@ -2,6 +2,8 @@ package com.example.quinten.netpay;
 
 
 import android.app.Activity;
+import android.text.SpannableString;
+import android.text.SpannedString;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,10 +16,10 @@ public class ListViewAdapter extends BaseAdapter{
 
     Activity context;
     String Betaler[];
-    String Bedrag[];
+    SpannableString Bedrag[];
     String Datum[];
 
-    public ListViewAdapter(Activity context, String[] Betaler, String[] Bedrag, String[] Datum) {
+    public ListViewAdapter(Activity context, String[] Betaler, SpannableString[] Bedrag, String[] Datum) {
         super();
         this.context = context;
         this.Betaler = Betaler;

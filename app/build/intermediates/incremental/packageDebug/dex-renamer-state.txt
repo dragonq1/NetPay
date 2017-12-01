@@ -1,7 +1,7 @@
-#Thu Nov 30 17:22:35 CET 2017
-base.0=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_db9743405d97a6fff1d2f7bfd4e87bfc944011b2
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_4343d7a4619d1c086fde23797b798455b48204dc\\classes.dex
-base.1=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_4343d7a4619d1c086fde23797b798455b48204dc
-file.0=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_db9743405d97a6fff1d2f7bfd4e87bfc944011b2\\classes.dex
+#Fri Dec 01 10:38:17 CET 2017
+base.0=C\:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ba2a62223b4cad5888967ac736dde8353b9a1148
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5cdc435719cfdcb8f3d7f2318a3f74b385e381e5\\classes.dex
+base.1=C\:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5cdc435719cfdcb8f3d7f2318a3f74b385e381e5
+file.0=C\:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ba2a62223b4cad5888967ac736dde8353b9a1148\\classes.dex

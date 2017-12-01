@@ -1,8 +1,12 @@
 package com.example.quinten.netpay;
 
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableString;
+import android.text.SpannedString;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -37,7 +41,7 @@ public class Transacties extends AppCompatActivity {
 
         final ArrayList<String> strLijstDatum = new ArrayList<>();
         final ArrayList<String> strLijstBetaler = new ArrayList<>();
-        final ArrayList<String> strLijstBedrag = new ArrayList<>();
+        final ArrayList<SpannableString> strLijstBedrag = new ArrayList<>();
 
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
         final String strVoornaam = settings.getString("voornaam", "");
@@ -70,7 +74,7 @@ public class Transacties extends AppCompatActivity {
                                     ///gegevens ophalen
                                     String strResp = jsonResponse.getString(String.valueOf(intTeller));
                                     StringTokenizer st = new StringTokenizer(strResp, "-");
-                                    String strBedrag = st.nextToken().trim() + " EUR";
+                                    String strBedrag = st.nextToken().trim() + "EUR";
                                     String strOntvanger = st.nextToken();
                                     String strBetaler = st.nextToken().trim();
                                     String strDatumDag = st.nextToken();
@@ -78,22 +82,34 @@ public class Transacties extends AppCompatActivity {
 
                                     //Datum omzetten
                                     String strDatumMaand = new DateFormatSymbols().getMonths()[intDatumMaand-1];
-                                    String strDatum = strDatumDag + " " + strDatumMaand;
+                                    String strDatum = (strDatumDag + " " + strDatumMaand);
+
                                     //Geld ontvangen
                                     if(strVoornaam.equals(strOntvanger)) {
-                                        strLijstBedrag.add("+" + strBedrag);
+
+                                        //Tekst kleur geven
+                                        strBedrag = "-" + strBedrag;
+                                        SpannableString ssBedrag =  new SpannableString(strBedrag);
+                                        ssBedrag.setSpan(new ForegroundColorSpan(Color.parseColor("#b21515")), 0, strBedrag.length(), 0);
+                                        strLijstBedrag.add(ssBedrag);
+
                                         strLijstBetaler.add(strBetaler);
                                         strLijstDatum.add(strDatum);
 
                                     //Betaling
                                     }else{
-                                        strLijstBedrag.add("-" + strBedrag);
+                                        //Tekst kleur geven
+                                        strBedrag = "+" + strBedrag;
+                                        SpannableString ssBedrag =  new SpannableString(strBedrag);
+                                        ssBedrag.setSpan(new ForegroundColorSpan(Color.parseColor("#20a02f")), 0, strBedrag.length(), 0);
+                                        strLijstBedrag.add(ssBedrag);
+
                                         strLijstBetaler.add(strOntvanger);
                                         strLijstDatum.add(strDatum);
                                     }
 
                                     //Arrays omzetten naar string arrays
-                                    String[] strLijstBedragen = new String[strLijstBedrag.size()];
+                                    SpannableString[] strLijstBedragen = new SpannableString[strLijstBedrag.size()];
                                     strLijstBedragen = strLijstBedrag.toArray(strLijstBedragen);
 
                                     String[] strLijstOntvanger = new String[strLijstBetaler.size()];
