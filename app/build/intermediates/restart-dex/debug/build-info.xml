@@ -6,60 +6,60 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1512123087755"
+    timestamp="1512397901138"
     token="-2298105774574400050"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="280" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="49" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="23" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
         build-mode="FULL"
-        timestamp="1512121092400"
+        timestamp="1512397822044"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -69,44 +69,12 @@
             type="SPLIT_MAIN" />
     </build>
     <build
-        build-mode="COLD"
-        timestamp="1512122813220"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-    </build>
-    <build
         build-mode="HOT_WARM"
-        timestamp="1512122847425"
+        timestamp="1512397901138"
         verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512122847425\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1512122892029"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512122892029\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1512123065494"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\builds\debug\1512123065494\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1512123087755"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
+            location="C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

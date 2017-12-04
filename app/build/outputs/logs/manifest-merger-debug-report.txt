@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\m
 	android:name
 		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:7:5-26:19
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:7:5-28:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.android\build-cache\61be46f21bc247d0d2201a1cd7cfad0f97098cda\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.android\build-cache\611518bcd3992b3c7811613a844d51c73a179efa\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.android\build-cache\5cfae695ba4b8c4c5e541ba78af41b325d3cdb1f\output\AndroidManifest.xml:29:5-20
@@ -73,9 +73,17 @@ ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\m
 	android:name
 		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:24:19-55
 activity#com.example.quinten.netpay.Transacties
-ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:25:9-58
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:25:9-49
 	android:name
 		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:25:19-46
+activity#com.example.quinten.netpay.Betalen
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:26:9-45
+	android:name
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:26:19-42
+activity#com.example.quinten.netpay.BetalingManueel
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:27:9-62
+	android:name
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:27:19-50
 uses-sdk
 INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.android\build-cache\61be46f21bc247d0d2201a1cd7cfad0f97098cda\output\AndroidManifest.xml:21:5-23:78

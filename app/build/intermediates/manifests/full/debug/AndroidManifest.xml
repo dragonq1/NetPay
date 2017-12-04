@@ -33,6 +33,8 @@
         <activity android:name="com.example.quinten.netpay.Account" />
         <activity android:name="com.example.quinten.netpay.WachtwoordVeranderen" />
         <activity android:name="com.example.quinten.netpay.Transacties" />
+        <activity android:name="com.example.quinten.netpay.Betalen" />
+        <activity android:name="com.example.quinten.netpay.BetalingManueel" />
     </application>
 
 </manifest>
