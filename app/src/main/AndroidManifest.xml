@@ -22,7 +22,9 @@
         <activity android:name=".Registreren" />
         <activity android:name=".Account" />
         <activity android:name=".WachtwoordVeranderen" />
-        <activity android:name=".Transacties"></activity>
+        <activity android:name=".Transacties" />
+        <activity android:name=".Betalen" />
+        <activity android:name=".BetalingManueel"></activity>
     </application>
 
 </manifest>
