@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 09 17:26:55 CET 2018
+#Tue Jan 09 18:52:04 CET 2018
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\notification_template_custom_big.xml

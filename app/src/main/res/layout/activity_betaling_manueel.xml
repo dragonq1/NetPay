@@ -6,63 +6,57 @@
     android:layout_height="match_parent"
     tools:context="com.example.quinten.netpay.BetalingManueel">
 
-    <EditText
-        android:id="@+id/txtBedrag"
-        android:layout_width="82dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="120dp"
-        android:layout_weight="1"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:hint="bedrag"
-        android:inputType="numberDecimal"
-        android:textColor="#07bc40"
-        android:textSize="70px"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,PxUsage,RtlHardcoded"
-        app:layout_constraintLeft_toRightOf="@+id/txt1"
-        android:layout_marginLeft="8dp" />
-
-    <EditText
-        android:id="@+id/txt2"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="0dp"
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="120dp"
-        android:layout_weight="0.13"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="none"
-        android:text="euro betalen aan:"
-        android:textSize="70px"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintLeft_toRightOf="@+id/txtBedrag"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,PxUsage,RtlHardcoded" />
+        app:layout_constraintVertical_bias="0.0">
 
-    <EditText
-        android:id="@+id/txt1"
-        android:layout_width="65dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="120dp"
-        android:layout_weight="0.13"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="none"
-        android:text="Ik wil "
-        android:textSize="70px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText,PxUsage" />
+        <EditText
+            android:id="@+id/txtiBegunstigde"
+            android:layout_width="500dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Ik wil een betaling doen aan"
+            android:textSize="24sp"
+            android:enabled="false"
+            android:textColor="#000"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtBegunstigde"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtiBegunstigde"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="gebruikersnaam begunstigde"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
