@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableString;
-import android.text.SpannedString;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
@@ -20,10 +19,9 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DateFormatSymbols;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-
-import java.text.DateFormatSymbols;
 
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
@@ -59,6 +57,7 @@ public class Transacties extends AppCompatActivity {
                 strLijstBedrag.clear();
                 strLijstBetaler.clear();
                 strLijstDatum.clear();
+
                 //Transacties ophalen
                 //Progresbar zichtbaar maken
                 progressBar.setVisibility(View.VISIBLE);
@@ -74,9 +73,9 @@ public class Transacties extends AppCompatActivity {
                                     ///gegevens ophalen
                                     String strResp = jsonResponse.getString(String.valueOf(intTeller));
                                     StringTokenizer st = new StringTokenizer(strResp, "-");
-                                    String strBedrag = st.nextToken().trim() + "EUR";
-                                    String strOntvanger = st.nextToken();
-                                    String strBetaler = st.nextToken().trim();
+                                    String strBedrag = st.nextToken() + "EUR";
+                                    String strOntvanger = st.nextToken().trim().replace("  ", " ");
+                                    String strBetaler = st.nextToken().trim().replace("  ", " ");
                                     String strDatumDag = st.nextToken();
                                     int intDatumMaand = Integer.parseInt(st.nextToken());
 
