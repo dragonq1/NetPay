@@ -3,7 +3,6 @@ package com.example.quinten.netpay;
 
 import android.app.Activity;
 import android.text.SpannableString;
-import android.text.SpannedString;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,20 +46,27 @@ public class ListViewAdapter extends BaseAdapter{
         TextView txtDatum;
     }
 
+    @Override
+    public int getViewTypeCount() {
+        return 3;
+    }
+
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         LayoutInflater inflator = context.getLayoutInflater();
 
         if(convertView == null) {
-            convertView = inflator.inflate(R.layout.listview_transacties, null);
+            convertView = inflator.inflate(R.layout.listview_transacties,parent, false);
             holder = new ViewHolder();
             holder.txtDatum =  convertView.findViewById(R.id.txtDatum);
             holder.txtBetaler =  convertView.findViewById(txtBetaler);
             holder.txtBedrag =  convertView.findViewById(R.id.txtBedrag);
+            convertView.setTag(holder);
 
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
+
 
         holder.txtBetaler.setText(Betaler[position]);
         holder.txtDatum.setText(Datum[position]);

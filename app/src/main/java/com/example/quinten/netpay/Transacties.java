@@ -75,8 +75,8 @@ public class Transacties extends AppCompatActivity {
                                     String strResp = jsonResponse.getString(String.valueOf(intTeller));
                                     StringTokenizer st = new StringTokenizer(strResp, "-");
                                     String strBedrag = st.nextToken() + "EUR";
-                                    String strOntvanger = st.nextToken().trim().replace("  ", " ");
-                                    String strBetaler = st.nextToken().trim().replace("  ", " ");
+                                    String strOntvanger = st.nextToken().trim();
+                                    String strBetaler = st.nextToken().trim();
                                     String strDatumDag = st.nextToken();
                                     int intDatumMaand = Integer.parseInt(st.nextToken());
 
