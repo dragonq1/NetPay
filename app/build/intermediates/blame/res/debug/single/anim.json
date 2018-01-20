@@ -12,12 +12,28 @@
         "source": "C:\\Users\\user\\.android\\build-cache\\4a10fdb2c389cde9cc779a1d7655c7ca1dc39cf6\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
+        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\56ab058978e7edf38e04a4daefbb3e70fb3f7a7c\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
         "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\user\\.android\\build-cache\\4a10fdb2c389cde9cc779a1d7655c7ca1dc39cf6\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
         "source": "C:\\Users\\user\\.android\\build-cache\\4a10fdb2c389cde9cc779a1d7655c7ca1dc39cf6\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\56ab058978e7edf38e04a4daefbb3e70fb3f7a7c\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\56ab058978e7edf38e04a4daefbb3e70fb3f7a7c\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\56ab058978e7edf38e04a4daefbb3e70fb3f7a7c\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "D:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",

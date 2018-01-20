@@ -59,6 +59,14 @@ public class Menu extends Activity {
             }
         });
 
+        btnOntvangen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), OntvangenInfo.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

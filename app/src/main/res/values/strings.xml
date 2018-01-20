@@ -2,4 +2,9 @@
     <string name="app_name">NetPay</string>
     <string name="gebruiksnaam">Gebruiksnaam</string>
     <string name="wachtwoord">Wachtwoord</string>
+
+    <string name="title_activity_ontvangen">Ontvangen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_ontvangen_info">OntvangenInfo</string>
 </resources>

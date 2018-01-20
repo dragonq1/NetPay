@@ -44,6 +44,8 @@ public class Transacties extends AppCompatActivity {
 
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
         final String strVoornaam = settings.getString("voornaam", "");
+        final String strAchternaam = settings.getString("achternaam", "");
+        final String strNaam = (strAchternaam + " " + strVoornaam).replace("  "," ").trim();
         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.prgTrans);
 
         //Progresbar ontzichtbaar maken
@@ -74,9 +76,9 @@ public class Transacties extends AppCompatActivity {
                                     ///gegevens ophalen
                                     String strResp = jsonResponse.getString(String.valueOf(intTeller));
                                     StringTokenizer st = new StringTokenizer(strResp, "-");
-                                    String strBedrag = st.nextToken() + "EUR";
-                                    String strOntvanger = st.nextToken().trim();
-                                    String strBetaler = st.nextToken().trim();
+                                    String strBedrag = (st.nextToken() + " euro").replace(".",",");
+                                    String strOntvanger = st.nextToken().trim().replace("  ", " ");
+                                    String strBetaler = st.nextToken().trim().replace("  ", " ");
                                     String strDatumDag = st.nextToken();
                                     int intDatumMaand = Integer.parseInt(st.nextToken());
 
@@ -84,19 +86,18 @@ public class Transacties extends AppCompatActivity {
                                     String strDatumMaand = new DateFormatSymbols().getMonths()[intDatumMaand-1];
                                     String strDatum = (strDatumDag + " " + strDatumMaand);
 
-                                    //Geld ontvangen
-                                    if(strVoornaam.equals(strOntvanger)) {
-
+                                    //Betaling
+                                    if(strNaam.equals(strBetaler)) {
                                         //Tekst kleur geven
                                         strBedrag = "-" + strBedrag;
                                         SpannableString ssBedrag =  new SpannableString(strBedrag);
                                         ssBedrag.setSpan(new ForegroundColorSpan(Color.parseColor("#b21515")), 0, strBedrag.length(), 0);
                                         strLijstBedrag.add(ssBedrag);
 
-                                        strLijstBetaler.add(strBetaler);
+                                        strLijstBetaler.add(strOntvanger);
                                         strLijstDatum.add(strDatum);
 
-                                    //Betaling
+                                    //Geld ontvangen
                                     }else{
                                         //Tekst kleur geven
                                         strBedrag = "+" + strBedrag;
@@ -104,7 +105,7 @@ public class Transacties extends AppCompatActivity {
                                         ssBedrag.setSpan(new ForegroundColorSpan(Color.parseColor("#20a02f")), 0, strBedrag.length(), 0);
                                         strLijstBedrag.add(ssBedrag);
 
-                                        strLijstBetaler.add(strOntvanger);
+                                        strLijstBetaler.add(strBetaler);
                                         strLijstDatum.add(strDatum);
                                     }
 

@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
-                                Toast.makeText(getApplicationContext(), "ERROR!" + " " +  e.getMessage().toString(), Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "ERROR!" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
                                 //ProgressSpiner onzichtbaar maken
                                 prgLogin.setVisibility(View.INVISIBLE);
                             }

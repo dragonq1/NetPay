@@ -1,4 +1,4 @@
-#Sat Jan 13 12:00:10 CET 2018
+#Sat Jan 20 14:53:32 CET 2018
 base.0=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_4343d7a4619d1c086fde23797b798455b48204dc
 renamed.1=classes.dex
 renamed.0=classes2.dex

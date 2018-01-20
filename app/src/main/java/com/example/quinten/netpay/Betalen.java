@@ -25,5 +25,12 @@ public class Betalen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnQRCode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //
+            }
+        });
     }
 }

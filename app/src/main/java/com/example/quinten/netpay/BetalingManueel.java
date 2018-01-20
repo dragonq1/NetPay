@@ -24,6 +24,10 @@ import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class BetalingManueel extends AppCompatActivity {
 
+    @Override
+    public void onBackPressed() {
+            super.onBackPressed();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +62,7 @@ public class BetalingManueel extends AppCompatActivity {
 
                 builderBevestigen.setTitle("Betaling bevestigen").setMessage("Vul je wachtwoord in om de betaling te bevestigen").setPositiveButton("Bevestigen", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+                    public void onClick(DialogInterface dialogInterface, final int i) {
                         //Betaling bevestigen
                         if(txtWachtwoord.getText().toString().equals(strWachtwoord)) {
                             if(!(txtGebruikersnaam.getText().toString().equals(gebruikersnaam))) {
@@ -78,6 +82,10 @@ public class BetalingManueel extends AppCompatActivity {
                                                 switch(success) {
                                                     case "success":
                                                         Toast.makeText(getApplicationContext(), "Transactie geslaagd!", Toast.LENGTH_LONG).show();
+                                                        txtBedrag.setText("");
+                                                        txtGebruikersnaam.setText("");
+                                                        Intent intent = new Intent(getApplicationContext(), Betalen.class);
+                                                        startActivity(intent);
                                                         break;
                                                     case "Statement 2":
                                                         Toast.makeText(getApplicationContext(), "Statement 2", Toast.LENGTH_LONG).show();
