@@ -82,7 +82,7 @@ public class OntvangenInfo extends AppCompatActivity {
 
 
 
-                                    Toast.makeText(getApplicationContext(), "Het werkt!!!", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "QR-Code genereerd", Toast.LENGTH_LONG).show();
                                     //ProgressSpiner onzichtbaar maken
                                     prgQRCode.setVisibility(View.INVISIBLE);
 

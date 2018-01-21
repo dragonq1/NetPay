@@ -68,7 +68,7 @@ public class BetalingManueel extends AppCompatActivity {
                             if(!(txtGebruikersnaam.getText().toString().equals(gebruikersnaam))) {
 
                                 String strBedrag = txtBedrag.getText().toString().trim();
-                                Double dblBedrag = Double.parseDouble(strBedrag);
+                                final Double dblBedrag = Double.parseDouble(strBedrag);
 
                                 if(!(dblSaldo < dblBedrag)) {
 
@@ -84,6 +84,14 @@ public class BetalingManueel extends AppCompatActivity {
                                                         Toast.makeText(getApplicationContext(), "Transactie geslaagd!", Toast.LENGTH_LONG).show();
                                                         txtBedrag.setText("");
                                                         txtGebruikersnaam.setText("");
+
+                                                        //Saldo aanpassen
+                                                        SharedPreferences.Editor editor = settings.edit();
+                                                        String strNieuwSaldo =  String.valueOf((dblSaldo - dblBedrag));
+                                                        editor.putString("saldo",  strNieuwSaldo);
+                                                        editor.apply();
+
+                                                        //Terug naar betaling activity gaan
                                                         Intent intent = new Intent(getApplicationContext(), Betalen.class);
                                                         startActivity(intent);
                                                         break;

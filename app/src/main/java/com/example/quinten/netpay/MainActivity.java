@@ -21,6 +21,16 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
     public static final String USER_INFO = "UserInfo";
 
+
+    //Edit texts resetten
+    @Override
+    public void onRestart()
+    {
+        super.onRestart();
+        finish();
+        startActivity(getIntent());
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
