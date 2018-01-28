@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btnReg = (Button) findViewById(R.id.btnRegister);
         final ProgressBar prgLogin = (ProgressBar) findViewById(R.id.prbLogin);
         final EditText txtGebruiksnaam = (EditText)findViewById(R.id.txtNaam);
-        final EditText txtWachtwoord = (EditText)findViewById(R.id.txtWachtwoord);
+        final EditText txtWachtwoord = (EditText)findViewById(R.id.txtWachtwoordBetaling);
 
 
         //ProgressSpiner onzichtbaar maken

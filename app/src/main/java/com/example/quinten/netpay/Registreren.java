@@ -29,7 +29,7 @@ public class Registreren extends AppCompatActivity {
         final EditText txtVoornaam = (EditText) findViewById(R.id.txtVoornaam);
         final EditText txtAchternaam = (EditText) findViewById(R.id.txtAchternaam);
         final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtGebruikersnaam);
-        final EditText txtWachtwoord = (EditText) findViewById(R.id.txtWachtwoord);
+        final EditText txtWachtwoord = (EditText) findViewById(R.id.txtWachtwoordBetaling);
         final EditText txtWachtwoordH = (EditText) findViewById(R.id.txtWachtwoordHerhalen);
         final Button btnRegister = (Button) findViewById(R.id.btnRegister);
         final ProgressBar prgRegistreren = (ProgressBar) findViewById(R.id.prbRegistreren);

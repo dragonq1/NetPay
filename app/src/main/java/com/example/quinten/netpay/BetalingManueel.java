@@ -36,8 +36,8 @@ public class BetalingManueel extends AppCompatActivity {
 
         //Vars
         final SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
-        final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtBegunstigde);
-        final EditText txtBedrag = (EditText) findViewById(R.id.txtBedrag);
+        final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtBedragBetaling);
+        final EditText txtBedrag = (EditText) findViewById(R.id.txtBedragBetaling);
 
         final Double dblSaldo = Double.parseDouble(settings.getString("saldo", ""));
         final String strID = settings.getString("ID", "");

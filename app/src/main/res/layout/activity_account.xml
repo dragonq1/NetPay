@@ -46,7 +46,7 @@
         tools:ignore="HardcodedText,RtlHardcoded" />
 
     <TextView
-        android:id="@+id/txtWachtwoord"
+        android:id="@+id/txtWachtwoordBetaling"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginLeft="8dp"

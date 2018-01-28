@@ -20,7 +20,7 @@ public class Account extends AppCompatActivity {
 
         //Vars
         final TextView txtVoornaam = (TextView) findViewById(R.id.txtVoornaam);
-        final TextView txtAchternaam = (TextView) findViewById(R.id.txtWachtwoord);
+        final TextView txtAchternaam = (TextView) findViewById(R.id.txtWachtwoordBetaling);
         final TextView txtGebuikersnaam = (TextView) findViewById(R.id.txtGerbuikersnaam);
         final TextView txtSaldo = (TextView) findViewById(R.id.txtSaldo);
         final Button btnTransacties = (Button) findViewById(R.id.btnTransacties);

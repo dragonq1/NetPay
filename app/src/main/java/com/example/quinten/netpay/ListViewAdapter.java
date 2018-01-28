@@ -60,7 +60,7 @@ public class ListViewAdapter extends BaseAdapter{
             holder = new ViewHolder();
             holder.txtDatum =  convertView.findViewById(R.id.txtDatum);
             holder.txtBetaler =  convertView.findViewById(txtBetaler);
-            holder.txtBedrag =  convertView.findViewById(R.id.txtBedrag);
+            holder.txtBedrag =  convertView.findViewById(R.id.txtBedragBetaling);
             convertView.setTag(holder);
 
         }else{
