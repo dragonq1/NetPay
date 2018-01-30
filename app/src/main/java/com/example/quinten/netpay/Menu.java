@@ -1,6 +1,8 @@
 package com.example.quinten.netpay;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -13,14 +15,35 @@ import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class Menu extends Activity {
 
-
-
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder((Menu.this));
+        builder.setTitle("Ben je zeker dat je wilt uitloggen?").setNegativeButton("Ja", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                //Info resetten
+                SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.clear();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        }).setPositiveButton("Nee", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                //Niets
+            }
+        });
+        builder.create();
+        builder.show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
 
 
         //Vars
@@ -66,10 +89,6 @@ public class Menu extends Activity {
                 startActivity(intent);
             }
         });
-
-
-
-
 
     }
 }

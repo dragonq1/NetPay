@@ -77,7 +77,7 @@ public class OntvangenInfo extends AppCompatActivity {
                                     LVQRCode.setImageBitmap(bitmap);
 
                                 }catch(WriterException e) {
-                                    Toast.makeText(getApplicationContext(), "FOUT" + e.getMessage(), Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "ERROR 6" + e.getMessage(), Toast.LENGTH_LONG).show();
                                 }
 
 
@@ -94,7 +94,7 @@ public class OntvangenInfo extends AppCompatActivity {
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
-                                Toast.makeText(getApplicationContext(), "ERROR!" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "ERROR 5" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
                                 //ProgressSpiner onzichtbaar maken
                                 prgQRCode.setVisibility(View.INVISIBLE);
                             }

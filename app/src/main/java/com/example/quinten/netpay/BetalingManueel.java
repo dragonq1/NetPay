@@ -26,7 +26,21 @@ public class BetalingManueel extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-            super.onBackPressed();
+        AlertDialog.Builder builder = new AlertDialog.Builder((BetalingManueel.this));
+        builder.setTitle("Betaling annuleren?").setNegativeButton("Ja", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent = new Intent(getApplicationContext(), Betalen.class);
+                startActivity(intent);
+            }
+        }).setPositiveButton("Nee", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                //Niets
+            }
+        });
+        builder.create();
+        builder.show();
     }
 
     @Override
@@ -36,7 +50,7 @@ public class BetalingManueel extends AppCompatActivity {
 
         //Vars
         final SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
-        final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtBedragBetaling);
+        final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtGebruikersnaamMan);
         final EditText txtBedrag = (EditText) findViewById(R.id.txtBedragBetaling);
 
         final Double dblSaldo = Double.parseDouble(settings.getString("saldo", ""));
@@ -111,7 +125,7 @@ public class BetalingManueel extends AppCompatActivity {
 
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
-                                                Toast.makeText(getApplicationContext(), "ERROR" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
+                                                Toast.makeText(getApplicationContext(), "ERROR 4" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
                                             }
                                         }
                                     };
@@ -154,7 +168,7 @@ public class BetalingManueel extends AppCompatActivity {
             public void onClick(View view) {
                 final AlertDialog.Builder builderAnnuleren = new AlertDialog.Builder(BetalingManueel.this);
 
-                builderAnnuleren.setTitle("Betaling annuleren").setMessage("Ben je zeker dat je de betaling wilt annuleren?").setPositiveButton("Ja", new DialogInterface.OnClickListener() {
+                builderAnnuleren.setTitle("Betaling annuleren?").setPositiveButton("Ja", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Intent intent = new Intent(getApplicationContext(), Betalen.class);

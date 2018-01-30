@@ -70,7 +70,7 @@ public class Registreren extends AppCompatActivity {
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
-                                    Toast.makeText(getApplicationContext(), "ERROR" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "ERROR 7" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
                                 }
                             }
                         };

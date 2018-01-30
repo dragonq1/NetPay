@@ -32,7 +32,7 @@ public class Account extends AppCompatActivity {
         String strAchternaam = settings.getString("achternaam", "");
         String strGebruikersnaam = settings.getString("gebruikersnaam", "");
         String strWachtwoord = settings.getString("wachtwoord","");
-        String strSaldo = settings.getString("saldo","");
+        String strSaldo = settings.getString("saldo","").replace(".",",");
         strSaldo = "€" + strSaldo;
 
 
