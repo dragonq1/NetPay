@@ -104,8 +104,6 @@ public class Betalen extends AppCompatActivity {
     //QR-code nakijken en info ophalen uit database
     public void getQRCodeInfo(String QRCode) {
 
-        //Vars
-
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -156,7 +154,7 @@ public class Betalen extends AppCompatActivity {
 
     }
 
-    //Betaling methide
+    //Betaling methode
     public void betaling(String gbnOntvanger, final String bedrag, String qrCode) {
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
@@ -289,4 +287,5 @@ public class Betalen extends AppCompatActivity {
 
 
     }
+
 }

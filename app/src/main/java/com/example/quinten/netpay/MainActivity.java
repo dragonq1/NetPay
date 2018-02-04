@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.quinten.methods.InternetStatus;
 import com.example.quinten.requests.LoginRequest;
 
 import org.json.JSONException;
@@ -53,79 +54,86 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Nakijken of alle velden zijn ingevuld
-                if(txtGebruiksnaam.getText().toString().equals("") || txtWachtwoord.getText().toString().equals("")) {
-                    Toast.makeText(getApplicationContext(), "Vul alle velden in!", Toast.LENGTH_LONG).show();
-                }else{
-                    //ProgressSpiner zichtbaar maken
-                    prgLogin.setVisibility(View.VISIBLE);
+                //Internet connectie nakijken
+                InternetStatus IS = new InternetStatus();
+                boolean is = IS.getInternetStatus(getApplicationContext());
 
-                    //Vars
-                    final String strGebruikersnaam = txtGebruiksnaam.getText().toString();
-                    final String strWachtwoord = txtWachtwoord.getText().toString();
+                if(is) {
+                    //Nakijken of alle velden zijn ingevuld
+                    if(txtGebruiksnaam.getText().toString().equals("") || txtWachtwoord.getText().toString().equals("")) {
+                        Toast.makeText(getApplicationContext(), "Vul alle velden in!", Toast.LENGTH_LONG).show();
+                    }else{
+                        //ProgressSpiner zichtbaar maken
+                        prgLogin.setVisibility(View.VISIBLE);
 
-
-                    Response.Listener<String> responseListener = new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            try {
-                                JSONObject jsonReponse = new JSONObject(response);
-                                boolean success = jsonReponse.getBoolean("success");
-
-                                if (success) {
-                                    //Terugekregen gebruikersinfo ophalen
-                                    String strID = jsonReponse.getString("ID");
-                                    String strGebruikersnaamResp = jsonReponse.getString("Gebruikersnaam");
-                                    String strVoornaamResp = jsonReponse.getString("Voornaam");
-                                    String strAchternaamResp = jsonReponse.getString("Achternaam");
-                                    String strWachtwoordResp = jsonReponse.getString("Wachtwoord");
-                                    String strSaldoResp = jsonReponse.getString("Saldo");
+                        //Vars
+                        final String strGebruikersnaam = txtGebruiksnaam.getText().toString();
+                        final String strWachtwoord = txtWachtwoord.getText().toString();
 
 
+                        Response.Listener<String> responseListener = new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                try {
+                                    JSONObject jsonReponse = new JSONObject(response);
+                                    boolean success = jsonReponse.getBoolean("success");
 
-                                    //Menu openen en gebruikersinfo cachen
-                                    SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
-                                    SharedPreferences.Editor editor = settings.edit();
-                                    editor.putString("ID", (strID));
-                                    editor.putString("gebruikersnaam", strGebruikersnaamResp);
-                                    editor.putString("voornaam", strVoornaamResp);
-                                    editor.putString("achternaam", strAchternaamResp);
-                                    editor.putString("wachtwoord", strWachtwoordResp);
-                                    editor.putString("saldo", strSaldoResp);
-                                    editor.apply();
-
-                                    Intent intent = new Intent(getApplicationContext(), Menu.class);
-                                    startActivity(intent);
+                                    if (success) {
+                                        //Terugekregen gebruikersinfo ophalen
+                                        String strID = jsonReponse.getString("ID");
+                                        String strGebruikersnaamResp = jsonReponse.getString("Gebruikersnaam");
+                                        String strVoornaamResp = jsonReponse.getString("Voornaam");
+                                        String strAchternaamResp = jsonReponse.getString("Achternaam");
+                                        String strWachtwoordResp = jsonReponse.getString("Wachtwoord");
+                                        String strSaldoResp = jsonReponse.getString("Saldo");
 
 
-                                    //ProgressSpiner onzichtbaar maken
-                                    prgLogin.setVisibility(View.INVISIBLE);
 
-                                } else {
-                                    Toast.makeText(getApplicationContext(), "Gebruikersnaam of wachtwoord niet correct!", Toast.LENGTH_LONG).show();
+                                        //Menu openen en gebruikersinfo cachen
+                                        SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+                                        SharedPreferences.Editor editor = settings.edit();
+                                        editor.putString("ID", (strID));
+                                        editor.putString("gebruikersnaam", strGebruikersnaamResp);
+                                        editor.putString("voornaam", strVoornaamResp);
+                                        editor.putString("achternaam", strAchternaamResp);
+                                        editor.putString("wachtwoord", strWachtwoordResp);
+                                        editor.putString("saldo", strSaldoResp);
+                                        editor.apply();
+
+                                        Intent intent = new Intent(getApplicationContext(), Menu.class);
+                                        startActivity(intent);
+
+
+                                        //ProgressSpiner onzichtbaar maken
+                                        prgLogin.setVisibility(View.INVISIBLE);
+
+                                    } else {
+                                        Toast.makeText(getApplicationContext(), "Gebruikersnaam of wachtwoord niet correct!", Toast.LENGTH_LONG).show();
+                                        //ProgressSpiner onzichtbaar maken
+                                        prgLogin.setVisibility(View.INVISIBLE);
+                                    }
+
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                    Toast.makeText(getApplicationContext(), "ERROR 1!" + " " +  e.getMessage(), Toast.LENGTH_SHORT).show();
                                     //ProgressSpiner onzichtbaar maken
                                     prgLogin.setVisibility(View.INVISIBLE);
                                 }
 
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                                Toast.makeText(getApplicationContext(), "ERROR 1!" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
-                                //ProgressSpiner onzichtbaar maken
-                                prgLogin.setVisibility(View.INVISIBLE);
                             }
+                        };
 
-                        }
-                    };
-
-                    LoginRequest loginRequest = new LoginRequest(strGebruikersnaam, strWachtwoord, responseListener);
-                    RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-                    queue.add(loginRequest);
+                        LoginRequest loginRequest = new LoginRequest(strGebruikersnaam, strWachtwoord, responseListener);
+                        RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
+                        queue.add(loginRequest);
 
 
+                    }
+
+                }else{
+                    Toast.makeText(getApplicationContext(), "Geen internet verbinding!", Toast.LENGTH_LONG).show();
                 }
-
             }
-
         });
 
 

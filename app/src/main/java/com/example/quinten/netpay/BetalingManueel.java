@@ -109,8 +109,8 @@ public class BetalingManueel extends AppCompatActivity {
                                                         Intent intent = new Intent(getApplicationContext(), Betalen.class);
                                                         startActivity(intent);
                                                         break;
-                                                    case "Statement 2":
-                                                        Toast.makeText(getApplicationContext(), "Statement 2", Toast.LENGTH_LONG).show();
+                                                    case "empty ontvanger":
+                                                        Toast.makeText(getApplicationContext(), "Kan ontvanger niet vinden!", Toast.LENGTH_LONG).show();
                                                         break;
                                                     case "Statement 3":
                                                         Toast.makeText(getApplicationContext(), "Statement 3", Toast.LENGTH_LONG).show();
