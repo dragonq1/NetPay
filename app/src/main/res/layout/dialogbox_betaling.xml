@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvBedrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Bedrag: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+        <TextView
+            android:id="@+id/txtBedragBetalingQR"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="8dp"
+            android:text="€50,50"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/tvBedrag"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvBegunstigde"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Ontvanger: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBedrag"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+        <TextView
+            android:id="@+id/txtBegunstigdeBetalingQR"
+            android:layout_width="253dp"
+            android:layout_height="33dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="40dp"
+            android:text="Test Account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintLeft_toRightOf="@+id/tvBegunstigde"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <EditText
+        android:id="@+id/txtWachtwoordBetalingQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Wachtwoord"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBevestigBetaling"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

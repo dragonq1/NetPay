@@ -51,6 +51,19 @@
         tools:ignore="HardcodedText" />
 
     <Button
+        android:id="@+id/btnUitloggen"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Uitloggen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccount"
+        tools:ignore="HardcodedText" />
+
+    <Button
         android:id="@+id/btnOntvangen"
         android:layout_width="250dp"
         android:layout_height="50dp"

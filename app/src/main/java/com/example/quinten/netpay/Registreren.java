@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.quinten.requests.RegisterRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +29,7 @@ public class Registreren extends AppCompatActivity {
         final EditText txtVoornaam = (EditText) findViewById(R.id.txtVoornaam);
         final EditText txtAchternaam = (EditText) findViewById(R.id.txtAchternaam);
         final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtGebruikersnaam);
-        final EditText txtWachtwoord = (EditText) findViewById(R.id.txtWachtwoord);
+        final EditText txtWachtwoord = (EditText) findViewById(R.id.txtWachtwoordBetaling);
         final EditText txtWachtwoordH = (EditText) findViewById(R.id.txtWachtwoordHerhalen);
         final Button btnRegister = (Button) findViewById(R.id.btnRegister);
         final ProgressBar prgRegistreren = (ProgressBar) findViewById(R.id.prbRegistreren);
@@ -69,7 +70,7 @@ public class Registreren extends AppCompatActivity {
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
-                                    Toast.makeText(getApplicationContext(), "ERROR" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "ERROR 7" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
                                 }
                             }
                         };

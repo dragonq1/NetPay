@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.quinten.netpay.OntvangenInfo"
+    tools:showIn="@layout/activity_ontvangen_info">
+
+    <EditText
+        android:id="@+id/txtBedragQR"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Bedrag"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnGenerate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/lvQRCode"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/screen_background_light"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:text="Genereer QR-code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/prgQRCode"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lvQRCode"
+        app:layout_constraintLeft_toLeftOf="@+id/lvQRCode"
+        app:layout_constraintRight_toRightOf="@+id/lvQRCode"
+        app:layout_constraintTop_toTopOf="@+id/lvQRCode" />
+
+</android.support.constraint.ConstraintLayout>

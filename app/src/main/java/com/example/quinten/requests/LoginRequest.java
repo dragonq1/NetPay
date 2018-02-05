@@ -1,4 +1,4 @@
-package com.example.quinten.netpay;
+package com.example.quinten.requests;
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
