@@ -56,7 +56,7 @@ public class OntvangenInfo extends AppCompatActivity {
                     prgQRCode.setVisibility(View.VISIBLE);
                     //Code genereren
                     Random random = new Random();
-                    int randomCode = random.nextInt(500) + 100;
+                    int randomCode = random.nextInt(5000) + 100;
                     final String qrcode = ("2247-" + strGebruikersnaam + "-" + txtBedrag.getText().toString() + "-" +randomCode);
 
                     Response.Listener<String> responseListener = new Response.Listener<String>() {

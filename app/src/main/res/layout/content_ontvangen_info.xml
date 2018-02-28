@@ -42,7 +42,7 @@
         android:layout_width="240dp"
         android:layout_height="50dp"
         android:layout_marginBottom="32dp"
-        android:text="Genereer QR-code"
+        android:text="Betaling aanmaken"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

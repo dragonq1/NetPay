@@ -9,6 +9,7 @@ import java.util.Map;
 public class WachtwoordVRequest extends StringRequest {
 
     //Test
+    //Test2
 
     private static final String REGISTER_REQUEST_URL = "http://185.114.157.174/~dragv/wachtwoordv.php";
     private Map<String, String> params;
