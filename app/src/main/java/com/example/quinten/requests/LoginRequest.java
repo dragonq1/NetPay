@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class LoginRequest extends StringRequest {
 
-    private static final String LOGIN_REQUEST_URL = "http://37.34.58.100/~dragv/login.php";
+    private static final String LOGIN_REQUEST_URL = "http://185.114.157.174/~dragv/login.php";
     private Map<String, String> params;
 
     public LoginRequest(String gebruikersnaam, String wachtwoord, Response.Listener<String> listener) {

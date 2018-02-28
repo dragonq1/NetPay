@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         final String strWachtwoord = txtWachtwoord.getText().toString();
 
 
+
                         Response.Listener<String> responseListener = new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {

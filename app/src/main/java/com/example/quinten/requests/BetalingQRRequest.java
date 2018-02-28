@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class BetalingQRRequest extends StringRequest {
 
-    private static final String REGISTER_REQUEST_URL = "http://37.34.58.100/~dragv/BetalingQR.php";
+    private static final String REGISTER_REQUEST_URL = "http://185.114.157.174/~dragv/BetalingQR.php";
     private Map<String, String> params;
 
     public BetalingQRRequest(String gebruikersnaamOntvanger, String gebruikersnaamBetaler, String bedrag, String qrcode, Response.Listener<String> listener) {

@@ -13,7 +13,7 @@
         android:label="Tests for com.example.quinten.netpay"
         android:targetPackage="com.example.quinten.netpay" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

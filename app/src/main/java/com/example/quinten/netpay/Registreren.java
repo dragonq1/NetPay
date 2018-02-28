@@ -65,7 +65,8 @@ public class Registreren extends AppCompatActivity {
                                         startActivity(intent);
                                         Toast.makeText(getApplicationContext(), "Registratie succesvol!", Toast.LENGTH_LONG).show();
                                     } else {
-                                        Toast.makeText(getApplicationContext(), "Fout bij registreren", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(getApplicationContext(), "Fout bij registreren: " + jsonResponse.getString("error"), Toast.LENGTH_LONG).show();
+                                        prgRegistreren.setVisibility(View.INVISIBLE);
                                     }
 
                                 } catch (JSONException e) {

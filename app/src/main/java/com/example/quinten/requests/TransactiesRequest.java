@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class TransactiesRequest extends StringRequest {
 
-    private static final String TRANSACTIES_REQUEST_URL_REQUEST_URL = "http://37.34.58.100/~dragv/transacties.php";
+    private static final String TRANSACTIES_REQUEST_URL_REQUEST_URL = "http://185.114.157.174/~dragv/transacties.php";
     private Map<String, String> params;
 
     public TransactiesRequest(String intID, Response.Listener<String> listener) {

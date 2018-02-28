@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class QRCodeRequest extends StringRequest {
 
-    private static final String REGISTER_REQUEST_URL = "http://37.34.58.100/~dragv/QRCode.php";
+    private static final String REGISTER_REQUEST_URL = "http://185.114.157.174/~dragv/QRCode.php";
     private Map<String, String> params;
 
 

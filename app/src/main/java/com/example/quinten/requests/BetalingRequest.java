@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class BetalingRequest extends StringRequest{
 
-    private static final String REGISTER_REQUEST_URL = "http://37.34.58.100/~dragv/betaling.php";
+    private static final String REGISTER_REQUEST_URL = "http://185.114.157.174/~dragv/Betaling.php";
     private Map<String, String> params;
 
 
