@@ -113,14 +113,14 @@ public class MainActivity extends AppCompatActivity {
                                         //ProgressSpiner onzichtbaar maken
                                         prgLogin.setVisibility(View.INVISIBLE);
                                     }else{
-                                        Toast.makeText(getApplicationContext(), "ERROR 1" + jsonReponse.getString("error"), Toast.LENGTH_LONG).show();
+                                        Toast.makeText(getApplicationContext(), "ERROR 1: " + jsonReponse.getString("error"), Toast.LENGTH_LONG).show();
                                         //ProgressSpiner onzichtbaar maken
                                         prgLogin.setVisibility(View.INVISIBLE);
                                     }
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
-                                    Toast.makeText(getApplicationContext(), "ERROR 1!" + " " +  e.getMessage(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "ERROR 1: " + " " +  e.getMessage(), Toast.LENGTH_SHORT).show();
                                     //ProgressSpiner onzichtbaar maken
                                     prgLogin.setVisibility(View.INVISIBLE);
                                 }
