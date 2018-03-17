@@ -120,10 +120,16 @@ public class MainActivity extends AppCompatActivity {
                                         //ProgressSpiner onzichtbaar maken
                                         prgLogin.setVisibility(View.INVISIBLE);
 
-                                    } else if(jsonReponse.getString("error").equals("empty")) {
-                                        Toast.makeText(getApplicationContext(), "Gebruikersnaam of wachtwoord niet correct!", Toast.LENGTH_LONG).show();
+                                    } else if(jsonReponse.getString("error").equals("error-01")) {
+                                        Toast.makeText(getApplicationContext(), "Gebruikersnaam of wachtwoord incorrect!", Toast.LENGTH_LONG).show();
                                         //ProgressSpiner onzichtbaar maken
                                         prgLogin.setVisibility(View.INVISIBLE);
+
+                                    }else if(jsonReponse.getString("error").equals("error-02")) {
+                                        Toast.makeText(getApplicationContext(), "Gebruikersnaam of wachtwoord incorrect!", Toast.LENGTH_LONG).show();
+                                        //ProgressSpiner onzichtbaar maken
+                                        prgLogin.setVisibility(View.INVISIBLE);
+
                                     }else{
                                         Toast.makeText(getApplicationContext(), "ERROR 1: " + jsonReponse.getString("error"), Toast.LENGTH_LONG).show();
                                         //ProgressSpiner onzichtbaar maken
