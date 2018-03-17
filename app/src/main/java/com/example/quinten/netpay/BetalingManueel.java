@@ -78,10 +78,10 @@ public class BetalingManueel extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, final int i) {
                         //Betaling bevestigen
-                        if(txtWachtwoord.getText().toString().equals(strWachtwoord)) {
                             if(!(txtGebruikersnaam.getText().toString().equals(gebruikersnaam))) {
 
                                 String strBedrag = txtBedrag.getText().toString().trim();
+                                String strWachtwoord = txtWachtwoord.getText().toString();
                                 final Double dblBedrag = Double.parseDouble(strBedrag);
 
                                 if(!(dblSaldo < dblBedrag)) {
@@ -118,6 +118,9 @@ public class BetalingManueel extends AppCompatActivity {
                                                     case "false":
                                                         Toast.makeText(getApplicationContext(), "false", Toast.LENGTH_LONG).show();
                                                         break;
+                                                    case "wachtwoord":
+                                                        Toast.makeText(getApplicationContext(), "Incorrect wachtwoord", Toast.LENGTH_LONG).show();
+                                                        break;
                                                     default:
                                                         Toast.makeText(getApplicationContext(), success, Toast.LENGTH_LONG).show();
                                                         break;
@@ -132,7 +135,7 @@ public class BetalingManueel extends AppCompatActivity {
 
                                     String gebruikersnaamBetaler = settings.getString("gebruikersnaam", "");
 
-                                    BetalingRequest betalingRequest = new BetalingRequest(txtGebruikersnaam.getText().toString(), gebruikersnaamBetaler, dblBedrag.toString(), responseListener);
+                                    BetalingRequest betalingRequest = new BetalingRequest(txtGebruikersnaam.getText().toString(), gebruikersnaamBetaler, dblBedrag.toString(),strWachtwoord, responseListener);
                                     RequestQueue queue = Volley.newRequestQueue(BetalingManueel.this);
                                     queue.add(betalingRequest);
 
@@ -144,9 +147,6 @@ public class BetalingManueel extends AppCompatActivity {
                                 //Gebruikersnaam is hetzelfde
                                 Toast.makeText(getApplicationContext(), "Je kan geen geen betaling aan jezelf doen!", Toast.LENGTH_LONG).show();
                             }
-                        }else{
-                            Toast.makeText(getApplicationContext(), "Wachtwoord incorrect!", Toast.LENGTH_LONG).show();
-                        }
 
                     }
                 })

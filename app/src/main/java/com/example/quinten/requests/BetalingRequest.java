@@ -13,12 +13,13 @@ public class BetalingRequest extends StringRequest{
 
 
 
-    public BetalingRequest(String gebruikersnaamOntvanger, String gebruikersnaamBetaler, String bedrag, Response.Listener<String> listener) {
+    public BetalingRequest(String gebruikersnaamOntvanger, String gebruikersnaamBetaler, String bedrag, String wachtwoord, Response.Listener<String> listener) {
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params.put("gebruikersnaamOntvanger", gebruikersnaamOntvanger);
         params.put("gebruikersnaamBetaler", gebruikersnaamBetaler);
         params.put("bedrag", bedrag);
+        params.put("wachtwoord", wachtwoord);
     }
 
     @Override

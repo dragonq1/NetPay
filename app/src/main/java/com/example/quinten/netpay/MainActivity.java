@@ -32,8 +32,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(getIntent());
     }
 
+    //Back button uitschakelen
+    @Override
+    public void onBackPressed() {
+        SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.clear();
+        editor.apply();
+        moveTaskToBack(true);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

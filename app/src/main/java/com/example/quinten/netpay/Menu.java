@@ -26,6 +26,7 @@ public class Menu extends Activity {
                 SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
                 SharedPreferences.Editor editor = settings.edit();
                 editor.clear();
+                finish();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
@@ -87,6 +88,7 @@ public class Menu extends Activity {
         btnOntvangen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(getApplicationContext(), OntvangenInfo.class);
                 startActivity(intent);
             }
@@ -103,6 +105,7 @@ public class Menu extends Activity {
                         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
                         SharedPreferences.Editor editor = settings.edit();
                         editor.clear();
+                        editor.apply();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                     }

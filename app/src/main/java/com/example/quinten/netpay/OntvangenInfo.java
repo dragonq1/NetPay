@@ -1,5 +1,6 @@
 package com.example.quinten.netpay;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -29,6 +30,14 @@ import java.util.Random;
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class OntvangenInfo extends AppCompatActivity {
+
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Menu.class);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
