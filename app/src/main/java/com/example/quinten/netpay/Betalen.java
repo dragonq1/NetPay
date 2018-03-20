@@ -69,7 +69,7 @@ public class Betalen extends AppCompatActivity {
                 integrator.setCameraId(0);
                 integrator.setBeepEnabled(false);
                 integrator.setBarcodeImageEnabled(false);
-                integrator.setOrientationLocked(true);
+                integrator.setOrientationLocked(false);
                 integrator.initiateScan();
 
             }

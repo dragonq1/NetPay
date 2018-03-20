@@ -43,6 +43,7 @@ public class OntvangenInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ontvangen_info);
+        setTitle("Nieuwe betaling");
 
 
         //Vars

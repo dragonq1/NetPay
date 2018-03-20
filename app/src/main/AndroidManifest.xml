@@ -30,10 +30,7 @@
         <activity android:name=".Transacties" />
         <activity android:name=".Betalen" />
         <activity android:name=".BetalingManueel" />
-        <activity
-            android:name=".OntvangenInfo"
-            android:label="@string/title_activity_ontvangen_info"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".OntvangenInfo" />
     </application>
 
 </manifest>

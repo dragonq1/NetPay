@@ -1,272 +1,268 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\5dc06c517ce924ba6f30e1b57221deb0\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9a1e40165812403eb9a3bdcf840fa7e1\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\3b901ca68ef9fd565de9e0b9931723e5\AndroidManifest.xml:2:1-11:12
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:17:1-55:12
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\939bce63e769cf6ec64412fb65149e4c\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\37dd9e2f7b85fb3787e49df8b6139c72\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\da3e888e79b559dafc1a905d9decd154\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\27f5db29152ee674e41134a4af3f0c27\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\0aa74c0424aa0085ea1d1a355ae49cee\AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\3ab6f4a6667c1e7df0885cc4431586bb\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\cefbf6fa20e751ca867a6b112beddc2d\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4d0b0a0b3e291b938867fb72e1719145\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0eeba8a5ffc0349cb35e0b2f0def2e86\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\599deed0ecd7e96dce0c2a45ac877731\AndroidManifest.xml:17:1-31:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\f970c45b1fb16cc6fc76da31ba724563\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\8ac0892146c41ea2bab82760b7d0d886\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\d6117d653446d551703ee6512ef5c81a\AndroidManifest.xml:2:1-11:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:17:1-55:12
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\6ed59e923a741c04be48d2cb7cc4287e\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\dba1e22dcad0c00dddc759a38210219c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\9f41b383f22b0338cf39de684d2c0463\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\791833d8dc5444e2b2343647e2013d89\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\fcb58f4bfea78ec98b3ffb1068d258d5\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\e46c75aa06755af5b8e7cd688bd4081e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\3a44bf2c02f1397e1add59784d60019d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\08da71605d0aa811f124fd96aaf0d023\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\ceae57c7e675baae8725de2c404645ae\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\44aa032908b0b015f35ca8a548570d82\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:3:5-41
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-39:12
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-36:12
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:6:5-76
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:6:5-76
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:6:22-73
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:6:22-73
 uses-permission#android.permission.CAMERA
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:7:5-64
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:21:5-65
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:21:5-65
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:7:5-64
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:21:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:7:22-62
 uses-feature#android.hardware.camera
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:8:5-59
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:24:5-26:36
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:24:5-26:36
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:8:5-59
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:24:5-26:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:24:5-26:36
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:8:19-57
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:8:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:9:5-69
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:32:5-34:36
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:32:5-34:36
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:9:5-69
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:32:5-34:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:32:5-34:36
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:9:19-67
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:9:19-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:10:5-79
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:12:5-37:19
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\5dc06c517ce924ba6f30e1b57221deb0\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\5dc06c517ce924ba6f30e1b57221deb0\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9a1e40165812403eb9a3bdcf840fa7e1\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9a1e40165812403eb9a3bdcf840fa7e1\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\3b901ca68ef9fd565de9e0b9931723e5\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\3b901ca68ef9fd565de9e0b9931723e5\AndroidManifest.xml:9:5-20
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:45:5-53:19
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:45:5-53:19
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\939bce63e769cf6ec64412fb65149e4c\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\939bce63e769cf6ec64412fb65149e4c\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\37dd9e2f7b85fb3787e49df8b6139c72\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\37dd9e2f7b85fb3787e49df8b6139c72\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\da3e888e79b559dafc1a905d9decd154\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\da3e888e79b559dafc1a905d9decd154\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\27f5db29152ee674e41134a4af3f0c27\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\27f5db29152ee674e41134a4af3f0c27\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\3ab6f4a6667c1e7df0885cc4431586bb\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\3ab6f4a6667c1e7df0885cc4431586bb\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\cefbf6fa20e751ca867a6b112beddc2d\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\cefbf6fa20e751ca867a6b112beddc2d\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4d0b0a0b3e291b938867fb72e1719145\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4d0b0a0b3e291b938867fb72e1719145\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0eeba8a5ffc0349cb35e0b2f0def2e86\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0eeba8a5ffc0349cb35e0b2f0def2e86\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\599deed0ecd7e96dce0c2a45ac877731\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\599deed0ecd7e96dce0c2a45ac877731\AndroidManifest.xml:29:5-20
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:12:5-34:19
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\f970c45b1fb16cc6fc76da31ba724563\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\f970c45b1fb16cc6fc76da31ba724563\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\8ac0892146c41ea2bab82760b7d0d886\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\8ac0892146c41ea2bab82760b7d0d886\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\d6117d653446d551703ee6512ef5c81a\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\d6117d653446d551703ee6512ef5c81a\AndroidManifest.xml:9:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:45:5-53:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:45:5-53:19
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\6ed59e923a741c04be48d2cb7cc4287e\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\6ed59e923a741c04be48d2cb7cc4287e\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\dba1e22dcad0c00dddc759a38210219c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\dba1e22dcad0c00dddc759a38210219c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\9f41b383f22b0338cf39de684d2c0463\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\9f41b383f22b0338cf39de684d2c0463\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\791833d8dc5444e2b2343647e2013d89\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\791833d8dc5444e2b2343647e2013d89\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\e46c75aa06755af5b8e7cd688bd4081e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\e46c75aa06755af5b8e7cd688bd4081e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\3a44bf2c02f1397e1add59784d60019d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\3a44bf2c02f1397e1add59784d60019d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\08da71605d0aa811f124fd96aaf0d023\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\08da71605d0aa811f124fd96aaf0d023\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\ceae57c7e675baae8725de2c404645ae\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\ceae57c7e675baae8725de2c404645ae\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\44aa032908b0b015f35ca8a548570d82\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\44aa032908b0b015f35ca8a548570d82\AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:15:9-41
 	android:roundIcon
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:18:9-40
 activity#com.example.quinten.netpay.MainActivity
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:19:19-47
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:19:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:23:27-74
 activity#com.example.quinten.netpay.Menu
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:26:9-42
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:26:9-42
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:26:19-39
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:26:19-39
 activity#com.example.quinten.netpay.Registreren
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:27:9-49
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:27:9-49
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:27:19-46
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:27:19-46
 activity#com.example.quinten.netpay.Account
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:28:9-45
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:28:9-45
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:28:19-42
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:28:19-42
 activity#com.example.quinten.netpay.WachtwoordVeranderen
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:29:9-58
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:29:9-58
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:29:19-55
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:29:19-55
 activity#com.example.quinten.netpay.Transacties
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:30:9-49
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:30:9-49
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:30:19-46
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:30:19-46
 activity#com.example.quinten.netpay.Betalen
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:31:9-45
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:31:9-45
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:31:19-42
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:31:19-42
 activity#com.example.quinten.netpay.BetalingManueel
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:32:9-53
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:32:9-53
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:32:19-50
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:32:19-50
 activity#com.example.quinten.netpay.OntvangenInfo
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:33:9-36:68
-	android:label
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:35:13-66
-	android:theme
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:36:13-56
+ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:33:9-51
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:34:13-42
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml:33:19-48
 uses-sdk
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\5dc06c517ce924ba6f30e1b57221deb0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\5dc06c517ce924ba6f30e1b57221deb0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9a1e40165812403eb9a3bdcf840fa7e1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9a1e40165812403eb9a3bdcf840fa7e1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\3b901ca68ef9fd565de9e0b9931723e5\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\3b901ca68ef9fd565de9e0b9931723e5\AndroidManifest.xml:7:5-43
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:19:5-43
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:19:5-43
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\939bce63e769cf6ec64412fb65149e4c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\939bce63e769cf6ec64412fb65149e4c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\37dd9e2f7b85fb3787e49df8b6139c72\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\37dd9e2f7b85fb3787e49df8b6139c72\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\da3e888e79b559dafc1a905d9decd154\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\da3e888e79b559dafc1a905d9decd154\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\27f5db29152ee674e41134a4af3f0c27\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\27f5db29152ee674e41134a4af3f0c27\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\0aa74c0424aa0085ea1d1a355ae49cee\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\0aa74c0424aa0085ea1d1a355ae49cee\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\3ab6f4a6667c1e7df0885cc4431586bb\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\3ab6f4a6667c1e7df0885cc4431586bb\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\cefbf6fa20e751ca867a6b112beddc2d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\cefbf6fa20e751ca867a6b112beddc2d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4d0b0a0b3e291b938867fb72e1719145\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4d0b0a0b3e291b938867fb72e1719145\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0eeba8a5ffc0349cb35e0b2f0def2e86\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0eeba8a5ffc0349cb35e0b2f0def2e86\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\599deed0ecd7e96dce0c2a45ac877731\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\599deed0ecd7e96dce0c2a45ac877731\AndroidManifest.xml:21:5-23:58
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\f970c45b1fb16cc6fc76da31ba724563\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\f970c45b1fb16cc6fc76da31ba724563\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\8ac0892146c41ea2bab82760b7d0d886\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\8ac0892146c41ea2bab82760b7d0d886\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\d6117d653446d551703ee6512ef5c81a\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\d6117d653446d551703ee6512ef5c81a\AndroidManifest.xml:7:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:19:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\6ed59e923a741c04be48d2cb7cc4287e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\6ed59e923a741c04be48d2cb7cc4287e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\dba1e22dcad0c00dddc759a38210219c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\dba1e22dcad0c00dddc759a38210219c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\9f41b383f22b0338cf39de684d2c0463\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\9f41b383f22b0338cf39de684d2c0463\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\791833d8dc5444e2b2343647e2013d89\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\791833d8dc5444e2b2343647e2013d89\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\fcb58f4bfea78ec98b3ffb1068d258d5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\fcb58f4bfea78ec98b3ffb1068d258d5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\e46c75aa06755af5b8e7cd688bd4081e\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\e46c75aa06755af5b8e7cd688bd4081e\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\3a44bf2c02f1397e1add59784d60019d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\3a44bf2c02f1397e1add59784d60019d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\08da71605d0aa811f124fd96aaf0d023\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\08da71605d0aa811f124fd96aaf0d023\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\ceae57c7e675baae8725de2c404645ae\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\ceae57c7e675baae8725de2c404645ae\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\44aa032908b0b015f35ca8a548570d82\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\44aa032908b0b015f35ca8a548570d82\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\herreboschq\Documents\AndroidStudioProjects\NetPay\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\5dc06c517ce924ba6f30e1b57221deb0\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\5dc06c517ce924ba6f30e1b57221deb0\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\939bce63e769cf6ec64412fb65149e4c\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\939bce63e769cf6ec64412fb65149e4c\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\37dd9e2f7b85fb3787e49df8b6139c72\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\37dd9e2f7b85fb3787e49df8b6139c72\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\da3e888e79b559dafc1a905d9decd154\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\da3e888e79b559dafc1a905d9decd154\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\27f5db29152ee674e41134a4af3f0c27\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\27f5db29152ee674e41134a4af3f0c27\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\0aa74c0424aa0085ea1d1a355ae49cee\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\0aa74c0424aa0085ea1d1a355ae49cee\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\3ab6f4a6667c1e7df0885cc4431586bb\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\3ab6f4a6667c1e7df0885cc4431586bb\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\cefbf6fa20e751ca867a6b112beddc2d\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\cefbf6fa20e751ca867a6b112beddc2d\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4d0b0a0b3e291b938867fb72e1719145\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4d0b0a0b3e291b938867fb72e1719145\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0eeba8a5ffc0349cb35e0b2f0def2e86\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0eeba8a5ffc0349cb35e0b2f0def2e86\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\599deed0ecd7e96dce0c2a45ac877731\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\599deed0ecd7e96dce0c2a45ac877731\AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\f970c45b1fb16cc6fc76da31ba724563\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\f970c45b1fb16cc6fc76da31ba724563\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\6ed59e923a741c04be48d2cb7cc4287e\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\6ed59e923a741c04be48d2cb7cc4287e\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\dba1e22dcad0c00dddc759a38210219c\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\dba1e22dcad0c00dddc759a38210219c\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\9f41b383f22b0338cf39de684d2c0463\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\9f41b383f22b0338cf39de684d2c0463\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\791833d8dc5444e2b2343647e2013d89\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\791833d8dc5444e2b2343647e2013d89\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\fcb58f4bfea78ec98b3ffb1068d258d5\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\fcb58f4bfea78ec98b3ffb1068d258d5\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\e46c75aa06755af5b8e7cd688bd4081e\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\e46c75aa06755af5b8e7cd688bd4081e\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\3a44bf2c02f1397e1add59784d60019d\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\3a44bf2c02f1397e1add59784d60019d\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\08da71605d0aa811f124fd96aaf0d023\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\08da71605d0aa811f124fd96aaf0d023\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\ceae57c7e675baae8725de2c404645ae\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\ceae57c7e675baae8725de2c404645ae\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\44aa032908b0b015f35ca8a548570d82\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\44aa032908b0b015f35ca8a548570d82\AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\ae4ef5aa6c4cd62ed32b77fac2c3921b\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\73877452e9b46885a3f423de46a9d8fb\AndroidManifest.xml:26:9-47
 uses-feature#android.hardware.camera.front
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:27:5-29:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:27:5-29:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:29:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:29:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:28:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:28:9-53
 uses-feature#android.hardware.camera.flash
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:35:5-37:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:35:5-37:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:37:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:37:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:36:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:36:9-53
 uses-feature#android.hardware.screen.landscape
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:38:5-40:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:38:5-40:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:40:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:40:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:39:9-57
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:39:9-57
 uses-feature#android.hardware.wifi
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:41:5-43:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:41:5-43:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:43:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:43:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:42:9-45
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:42:9-45
 activity#com.journeyapps.barcodescanner.CaptureActivity
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:46:9-52:63
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:46:9-52:63
 	android:screenOrientation
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:49:13-56
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:49:13-56
 	android:clearTaskOnLaunch
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:48:13-45
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:48:13-45
 	android:stateNotNeeded
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:50:13-42
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:50:13-42
 	android:windowSoftInputMode
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:52:13-60
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:52:13-60
 	android:theme
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:51:13-54
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:51:13-54
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6448f68fb1ada154abb1ad7e62cbe6c0\AndroidManifest.xml:47:13-74
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\herreboschq\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\dcc2de555b9c05fd23e4b3987ef24b4c\AndroidManifest.xml:47:13-74

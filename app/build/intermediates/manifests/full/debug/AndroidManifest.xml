@@ -57,10 +57,7 @@
         <activity android:name="com.example.quinten.netpay.Transacties" />
         <activity android:name="com.example.quinten.netpay.Betalen" />
         <activity android:name="com.example.quinten.netpay.BetalingManueel" />
-        <activity
-            android:name="com.example.quinten.netpay.OntvangenInfo"
-            android:label="@string/title_activity_ontvangen_info"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.quinten.netpay.OntvangenInfo" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"

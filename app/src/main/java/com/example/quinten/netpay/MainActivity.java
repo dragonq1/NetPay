@@ -116,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
                                         Intent intent = new Intent(getApplicationContext(), Menu.class);
                                         startActivity(intent);
 
-
                                         //ProgressSpiner onzichtbaar maken
                                         prgLogin.setVisibility(View.INVISIBLE);
 
