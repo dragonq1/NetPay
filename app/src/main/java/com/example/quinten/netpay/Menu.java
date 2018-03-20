@@ -11,6 +11,8 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
+
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class Menu extends Activity {
@@ -55,6 +57,7 @@ public class Menu extends Activity {
         final Button btnOntvangen = findViewById(R.id.btnOntvangen);
         final Button btnAccount = findViewById(R.id.btnAccount);
         final Button btnUitloggen = findViewById(R.id.btnUitloggen);
+        final FloatingActionButton FTb = findViewById(R.id.ftBetalen);
 
         //Gegevens ophalen
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
@@ -74,8 +77,11 @@ public class Menu extends Activity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Account.class);
                 startActivity(intent);
+
             }
         });
+
+
 
         btnBetalen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,6 +123,13 @@ public class Menu extends Activity {
                 });
                 builder.create();
                 builder.show();
+            }
+        });
+
+        FTb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
