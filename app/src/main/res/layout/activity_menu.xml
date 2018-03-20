@@ -96,15 +96,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:fadeScrollbars="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         fab:fab_colorNormal="@color/colorPrimary"
         fab:fab_colorPressed="@color/ColorActionPressed"
-        fab:fab_icon="@android:drawable/ic_input_add"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        fab:fab_icon="@drawable/ic_add_icon">
 
     </com.getbase.floatingactionbutton.FloatingActionButton>
 
