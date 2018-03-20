@@ -1,6 +1,5 @@
 package com.example.quinten.netpay;
 
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -40,10 +39,13 @@ public class Betalen extends AppCompatActivity {
         setContentView(R.layout.activity_betalen);
         setTitle("Betaling");
 
+        if(getIntent().getStringExtra("ActionButton").equals("true"))
+            openCamera();
+
+
         //Vars
         final Button btnQRCode = (Button) findViewById(R.id.btnQRCode);
         final Button btnManueel = (Button) findViewById(R.id.btnManueel);
-        final Activity activity = this;
 
 
 
@@ -63,17 +65,20 @@ public class Betalen extends AppCompatActivity {
         btnQRCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                IntentIntegrator integrator = new IntentIntegrator(activity);
-                integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-                integrator.setPrompt("Scan de QR-code");
-                integrator.setCameraId(0);
-                integrator.setBeepEnabled(false);
-                integrator.setBarcodeImageEnabled(false);
-                integrator.setOrientationLocked(false);
-                integrator.initiateScan();
-
+                openCamera();
             }
         });
+    }
+
+    public void openCamera() {
+        IntentIntegrator integrator = new IntentIntegrator(this);
+        integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
+        integrator.setPrompt("Scan de QR-code");
+        integrator.setCameraId(0);
+        integrator.setBeepEnabled(false);
+        integrator.setBarcodeImageEnabled(false);
+        integrator.setOrientationLocked(false);
+        integrator.initiateScan();
     }
 
     //Kijken voor resultaat QR-code
@@ -92,7 +97,7 @@ public class Betalen extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "ERROR 2!" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }else{
-                    Toast.makeText(getApplicationContext(), "QR-code ongeldig!!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "QR-code ongeldig!", Toast.LENGTH_LONG).show();
                 }
 
             }
