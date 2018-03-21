@@ -68,97 +68,107 @@ public class BetalingManueel extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AlertDialog.Builder builderBevestigen = new AlertDialog.Builder((BetalingManueel.this));
-                final EditText txtWachtwoord = new EditText(BetalingManueel.this);
-                txtWachtwoord.setInputType(InputType.TYPE_CLASS_TEXT |InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                if (!(txtGebruikersnaam.getText().toString().equals(""))) {
+                    if(!(txtBedrag.getText().toString().equals(""))) {
 
-                builderBevestigen.setTitle("Betaling bevestigen").setMessage("Vul je wachtwoord in om de betaling te bevestigen").setPositiveButton("Bevestigen", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, final int i) {
-                        //Betaling bevestigen
-                            if(!(txtGebruikersnaam.getText().toString().equals(gebruikersnaam))) {
+                        AlertDialog.Builder builderBevestigen = new AlertDialog.Builder((BetalingManueel.this));
+                        final EditText txtWachtwoord = new EditText(BetalingManueel.this);
+                        txtWachtwoord.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
 
-                                String strBedrag = txtBedrag.getText().toString().trim();
-                                String strWachtwoord = txtWachtwoord.getText().toString();
-                                final Double dblBedrag = Double.parseDouble(strBedrag);
+                        builderBevestigen.setTitle("Betaling bevestigen").setMessage("Vul je wachtwoord in om de betaling te bevestigen").setPositiveButton("Bevestigen", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, final int i) {
+                                //Betaling bevestigen
+                                if (!(txtGebruikersnaam.getText().toString().equals(gebruikersnaam))) {
 
-                                if(!(dblSaldo < dblBedrag)) {
+                                    String strBedrag = txtBedrag.getText().toString().trim();
+                                    String strWachtwoord = txtWachtwoord.getText().toString();
+                                    final Double dblBedrag = Double.parseDouble(strBedrag);
 
-                                    Response.Listener<String> responseListener = new Response.Listener<String>() {
-                                        @Override
-                                        public void onResponse(String response) {
-                                            try {
-                                                JSONObject jsonResponse = new JSONObject(response);
-                                                String success = jsonResponse.getString("success");
+                                    if (!(dblSaldo < dblBedrag)) {
 
-                                                switch(success) {
-                                                    case "success":
-                                                        Toast.makeText(getApplicationContext(), "Transactie geslaagd!", Toast.LENGTH_LONG).show();
-                                                        txtBedrag.setText("");
-                                                        txtGebruikersnaam.setText("");
+                                        Response.Listener<String> responseListener = new Response.Listener<String>() {
+                                            @Override
+                                            public void onResponse(String response) {
+                                                try {
+                                                    JSONObject jsonResponse = new JSONObject(response);
+                                                    String success = jsonResponse.getString("success");
 
-                                                        //Saldo aanpassen
-                                                        SharedPreferences.Editor editor = settings.edit();
-                                                        String strNieuwSaldo =  String.valueOf((dblSaldo - dblBedrag));
-                                                        editor.putString("saldo",  strNieuwSaldo);
-                                                        editor.apply();
+                                                    switch (success) {
+                                                        case "success":
+                                                            Toast.makeText(getApplicationContext(), "Transactie geslaagd!", Toast.LENGTH_LONG).show();
+                                                            txtBedrag.setText("");
+                                                            txtGebruikersnaam.setText("");
 
-                                                        //Terug naar betaling activity gaan
-                                                        Intent intent = new Intent(getApplicationContext(), Menu.class);
-                                                        intent.putExtra("ActionButton", "false");
-                                                        startActivity(intent);
-                                                        break;
-                                                    case "empty ontvanger":
-                                                        Toast.makeText(getApplicationContext(), "Kan ontvanger niet vinden!", Toast.LENGTH_LONG).show();
-                                                        break;
-                                                    case "Statement 3":
-                                                        Toast.makeText(getApplicationContext(), "Statement 3", Toast.LENGTH_LONG).show();
-                                                        break;
-                                                    case "false":
-                                                        Toast.makeText(getApplicationContext(), "false", Toast.LENGTH_LONG).show();
-                                                        break;
-                                                    case "wachtwoord":
-                                                        Toast.makeText(getApplicationContext(), "Incorrect wachtwoord", Toast.LENGTH_LONG).show();
-                                                        break;
-                                                    default:
-                                                        Toast.makeText(getApplicationContext(), success, Toast.LENGTH_LONG).show();
-                                                        break;
+                                                            //Saldo aanpassen
+                                                            SharedPreferences.Editor editor = settings.edit();
+                                                            String strNieuwSaldo = String.valueOf((dblSaldo - dblBedrag));
+                                                            editor.putString("saldo", strNieuwSaldo);
+                                                            editor.apply();
+
+                                                            //Terug naar betaling activity gaan
+                                                            Intent intent = new Intent(getApplicationContext(), Menu.class);
+                                                            intent.putExtra("ActionButton", "false");
+                                                            startActivity(intent);
+                                                            break;
+                                                        case "empty ontvanger":
+                                                            Toast.makeText(getApplicationContext(), "Kan ontvanger niet vinden!", Toast.LENGTH_LONG).show();
+                                                            break;
+                                                        case "Statement 3":
+                                                            Toast.makeText(getApplicationContext(), "Statement 3", Toast.LENGTH_LONG).show();
+                                                            break;
+                                                        case "false":
+                                                            Toast.makeText(getApplicationContext(), "false", Toast.LENGTH_LONG).show();
+                                                            break;
+                                                        case "wachtwoord":
+                                                            Toast.makeText(getApplicationContext(), "Incorrect wachtwoord", Toast.LENGTH_LONG).show();
+                                                            break;
+                                                        default:
+                                                            Toast.makeText(getApplicationContext(), success, Toast.LENGTH_LONG).show();
+                                                            break;
+                                                    }
+
+                                                } catch (JSONException e) {
+                                                    e.printStackTrace();
+                                                    Toast.makeText(getApplicationContext(), "ERROR 4" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
                                                 }
-
-                                            } catch (JSONException e) {
-                                                e.printStackTrace();
-                                                Toast.makeText(getApplicationContext(), "ERROR 4" + " " + e.getMessage(), Toast.LENGTH_LONG).show();
                                             }
-                                        }
-                                    };
+                                        };
 
-                                    String gebruikersnaamBetaler = settings.getString("gebruikersnaam", "");
+                                        String gebruikersnaamBetaler = settings.getString("gebruikersnaam", "");
 
-                                    BetalingRequest betalingRequest = new BetalingRequest(txtGebruikersnaam.getText().toString(), gebruikersnaamBetaler, dblBedrag.toString(),strWachtwoord, responseListener);
-                                    RequestQueue queue = Volley.newRequestQueue(BetalingManueel.this);
-                                    queue.add(betalingRequest);
+                                        BetalingRequest betalingRequest = new BetalingRequest(txtGebruikersnaam.getText().toString(), gebruikersnaamBetaler, dblBedrag.toString(), strWachtwoord, responseListener);
+                                        RequestQueue queue = Volley.newRequestQueue(BetalingManueel.this);
+                                        queue.add(betalingRequest);
 
-                                }else{
-                                    //Saldo ontoerijkend
-                                    Toast.makeText(getApplicationContext(), "Saldo ontoerijkend!", Toast.LENGTH_LONG).show();
+                                    } else {
+                                        //Saldo ontoerijkend
+                                        Toast.makeText(getApplicationContext(), "Saldo ontoerijkend!", Toast.LENGTH_LONG).show();
+                                    }
+                                } else {
+                                    //Gebruikersnaam is hetzelfde
+                                    Toast.makeText(getApplicationContext(), "Je kan geen geen betaling aan jezelf doen!", Toast.LENGTH_LONG).show();
                                 }
-                            }else{
-                                //Gebruikersnaam is hetzelfde
-                                Toast.makeText(getApplicationContext(), "Je kan geen geen betaling aan jezelf doen!", Toast.LENGTH_LONG).show();
-                            }
 
+                            }
+                        })
+                                .setNegativeButton("Annuleren", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        //Niets
+                                    }
+                                }).setView(txtWachtwoord);
+                        builderBevestigen.create();
+                        builderBevestigen.show();
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Vul een geldige bedrag!", Toast.LENGTH_LONG).show();
                     }
-                })
-                .setNegativeButton("Annuleren", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        //Niets
-                    }
-                }).setView(txtWachtwoord);
-                builderBevestigen.create();
-                builderBevestigen.show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Vul een geldige gebruikersnaam in!", Toast.LENGTH_LONG).show();
+                }
             }
         });
+
 
 
         //Betaling annuleren
