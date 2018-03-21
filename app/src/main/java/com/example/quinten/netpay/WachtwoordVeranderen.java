@@ -36,7 +36,6 @@ public class WachtwoordVeranderen extends AppCompatActivity {
         //Gegevens ophalen
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
         final String strGebruikersnaamResp = settings.getString("gebruikersnaam", "");
-        final String strOudWachtwoordResp = settings.getString("wachtwoord","");
 
 
         btnWachtwoordV.setOnClickListener(new View.OnClickListener() {
@@ -52,14 +51,6 @@ public class WachtwoordVeranderen extends AppCompatActivity {
                     || txtNieuwWachtwoord2.toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "Vul alle velden in!", Toast.LENGTH_LONG).show();
                 }
-                else if (!(strOudWachtwoord.equals(strOudWachtwoordResp))) {
-                    Toast.makeText(getApplicationContext(), "Oud wachtwoord is incorrect!", Toast.LENGTH_LONG).show();
-                }
-
-                else if (strOudWachtwoordResp.equals(strNieuwWachtwoord)) {
-                    Toast.makeText(getApplicationContext(), "Oud en nieuw wachtwoord zijn hetzelfde!", Toast.LENGTH_LONG).show();
-                }
-
                 else if (!(strNieuwWachtwoord.equals(strNieuwWachtwoord2))) {
                     Toast.makeText(getApplicationContext(), "Wachtwoorden komen niet overeen!", Toast.LENGTH_LONG).show();
 
@@ -81,7 +72,13 @@ public class WachtwoordVeranderen extends AppCompatActivity {
                                     startActivity(i);
 
 
-                                } else {
+                                }else if(jsonReponse.getString("error").equals("error-06")) {
+                                    Toast.makeText(getApplicationContext(), "Oud en nieuw wachtwoord zijn hetzelfde!", Toast.LENGTH_LONG).show();
+
+                                }else if(jsonReponse.getString("error").equals("error-07")) {
+                                    Toast.makeText(getApplicationContext(), "Wachtwoord incorrect!", Toast.LENGTH_LONG).show();
+                                }
+                                else {
                                     Toast.makeText(getApplicationContext(), "Oeps! Er is iets fout gelopen! We werken eraan!", Toast.LENGTH_LONG).show();
                                 }
 
@@ -93,7 +90,7 @@ public class WachtwoordVeranderen extends AppCompatActivity {
                         }
                     };
 
-                    WachtwoordVRequest wachtwoordVRequest = new WachtwoordVRequest(strNieuwWachtwoord, strGebruikersnaamResp, responseListener);
+                    WachtwoordVRequest wachtwoordVRequest = new WachtwoordVRequest(strOudWachtwoord, strNieuwWachtwoord2, strGebruikersnaamResp, responseListener);
                     RequestQueue queue = Volley.newRequestQueue(WachtwoordVeranderen.this);
                     queue.add(wachtwoordVRequest);
 

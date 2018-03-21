@@ -14,10 +14,11 @@ public class WachtwoordVRequest extends StringRequest {
     private static final String REGISTER_REQUEST_URL = "http://185.114.157.174/~dragv/wachtwoordv.php";
     private Map<String, String> params;
 
-    public WachtwoordVRequest(String wachtwoord, String gebruikersnaam, Response.Listener<String> listener) {
+    public WachtwoordVRequest(String oudwachtwoord, String nieuwwachtwoord, String gebruikersnaam, Response.Listener<String> listener) {
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);
         params = new HashMap<>();
-        params.put("wachtwoord", wachtwoord);
+        params.put("oudwachtwoord", oudwachtwoord);
+        params.put("nieuwwachtwoord", nieuwwachtwoord);
         params.put("gebruikersnaam", gebruikersnaam);
     }
     @Override

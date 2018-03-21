@@ -124,7 +124,7 @@ public class Menu extends Activity {
             }
         });
 
-        findViewById(R.id.ftBetalen).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.FABBetalen).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Betalen.class);

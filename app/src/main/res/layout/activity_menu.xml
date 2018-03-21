@@ -90,22 +90,51 @@
         app:layout_constraintTop_toBottomOf="@+id/txtWelkomActie"
         tools:ignore="HardcodedText" />
 
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/ftBetalen"
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/ftMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/colorPrimary"
-        android:clickable="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:fadeScrollbars="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        fab:fab_colorNormal="@color/colorPrimary"
-        fab:fab_colorPressed="@color/ColorActionPressed"
+        fab:fab_addButtonColorNormal="@color/colorPrimary"
+        fab:fab_addButtonColorPressed="@color/ColorActionPressed"
         fab:fab_icon="@drawable/ic_add_icon">
 
-    </com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABBetalen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fadeScrollbars="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/ColorActionPressed"
+            fab:fab_icon="@drawable/ic_camera"
+            fab:fab_title="QR_code"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fadeScrollbars="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/ColorActionPressed"
+            fab:fab_icon="@drawable/ic_refresh"
+            fab:fab_title="Refresh"/>
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 
 </android.support.constraint.ConstraintLayout>
