@@ -61,8 +61,6 @@ public class BetalingManueel extends AppCompatActivity {
 
         final String gebruikersnaam = settings.getString("gebruikersnaam", "");
 
-        final String strWachtwoord = settings.getString("wachtwoord", "");
-
 
 
         //Betaling Bevestigen
@@ -106,7 +104,8 @@ public class BetalingManueel extends AppCompatActivity {
                                                         editor.apply();
 
                                                         //Terug naar betaling activity gaan
-                                                        Intent intent = new Intent(getApplicationContext(), Betalen.class);
+                                                        Intent intent = new Intent(getApplicationContext(), Menu.class);
+                                                        intent.putExtra("ActionButton", "false");
                                                         startActivity(intent);
                                                         break;
                                                     case "empty ontvanger":

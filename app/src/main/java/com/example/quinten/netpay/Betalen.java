@@ -33,15 +33,19 @@ public class Betalen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //Vars
+    private String[] _QRCodeInfo = new String[4];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_betalen);
         setTitle("Betaling");
 
-        if(getIntent().getStringExtra("ActionButton").equals("true"))
+        if(getIntent().getStringExtra("ActionButton") != null && getIntent().getStringExtra("ActionButton").equals("true")) {
+            getIntent().putExtra("ActionButton", "false");
             openCamera();
-
+        }
 
         //Vars
         final Button btnQRCode = (Button) findViewById(R.id.btnQRCode);
@@ -125,13 +129,13 @@ public class Betalen extends AppCompatActivity {
                             String stridCode = jsonReponse.getString("idCode");
 
 
-                            String[] QRCodeInfo = new String[4];
-                            QRCodeInfo[0] = strBedrag;
-                            QRCodeInfo[1] = strGebruikersnaam;
-                            QRCodeInfo[2] = strNaam;
-                            QRCodeInfo[3] = stridCode;
 
-                            AlertDialog(QRCodeInfo);
+                            _QRCodeInfo[0] = strBedrag;
+                            _QRCodeInfo[1] = strGebruikersnaam;
+                            _QRCodeInfo[2] = strNaam;
+                            _QRCodeInfo[3] = stridCode;
+
+                            AlertDialog(_QRCodeInfo);
 
 
                     }else if(jsonReponse.getString("error").equals("empty")) {
@@ -187,6 +191,7 @@ public class Betalen extends AppCompatActivity {
                             //Terug naar betaling activity gaan
                             Intent intent = new Intent(getApplicationContext(), Betalen.class);
                             startActivity(intent);
+
                             break;
                         case "Statement 2":
                             Toast.makeText(getApplicationContext(), "Statement 2", Toast.LENGTH_LONG).show();
@@ -196,6 +201,10 @@ public class Betalen extends AppCompatActivity {
                             break;
                         case "false":
                             Toast.makeText(getApplicationContext(), "false", Toast.LENGTH_LONG).show();
+                            break;
+                        case "wachtwoord":
+                            Toast.makeText(getApplicationContext(), "Wachtwoord incorrect!", Toast.LENGTH_LONG).show();
+                            AlertDialog(_QRCodeInfo);
                             break;
                         default:
                             Toast.makeText(getApplicationContext(), success, Toast.LENGTH_LONG).show();
@@ -231,7 +240,6 @@ public class Betalen extends AppCompatActivity {
             final SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
             double dblSaldo = Double.parseDouble(settings.getString("saldo", ""));
             double dblBedrag = Double.parseDouble(strBedrag);
-            final String strWachtwoord = settings.getString("wachtwoord", "");
             String strgbnBetaler = settings.getString("gebruikersnaam", "");
 
             if(dblSaldo < dblBedrag) {
@@ -258,12 +266,8 @@ public class Betalen extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         //Wachtwoord en veld nakijken
-                        final String strWachtwoordBox = txtWachtwoord.getText().toString();
                         if(txtWachtwoord.getText().toString().equals("")) {
                             Toast.makeText(getApplicationContext(), "Vul je wachtwoord in!", Toast.LENGTH_LONG).show();
-                            AlertDialog(QRCodeInfo);
-                        }else if(!(strWachtwoordBox.equals(strWachtwoord))) {
-                            Toast.makeText(getApplicationContext(), "Wachtwoord incorrect!", Toast.LENGTH_LONG).show();
                             AlertDialog(QRCodeInfo);
                         }else{
                             betaling(strGebruikersnaam, strBedrag, stridCode);

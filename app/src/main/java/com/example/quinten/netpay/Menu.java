@@ -84,6 +84,7 @@ public class Menu extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Betalen.class);
+                intent.putExtra("ActionButton", "false");
                 startActivity(intent);
             }
         });

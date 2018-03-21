@@ -1,4 +1,4 @@
-#Tue Mar 20 19:27:01 CET 2018
-base.0=D\:\\Mappen\\Documenten\\AndroidProjects\\NetPay\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
+#Wed Mar 21 08:49:06 CET 2018
+base.0=C\:\\Users\\herreboschq\\Documents\\AndroidStudioProjects\\NetPay\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
 path.0=classes.dex
 renamed.0=classes.dex
