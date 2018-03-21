@@ -26,6 +26,7 @@ public class Menu extends Activity {
                 SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
                 SharedPreferences.Editor editor = settings.edit();
                 editor.clear();
+                editor.apply();
                 finish();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);

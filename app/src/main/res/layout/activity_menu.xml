@@ -9,6 +9,82 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/ftMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="@dimen/fab_size_mini"
+        android:fadeScrollbars="false"
+        app:fab_labelsPosition="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        fab:fab_addButtonColorNormal="@color/colorPrimary"
+        fab:fab_addButtonColorPressed="@color/ColorActionPressed"
+        fab:fab_addButtonSize="mini"
+        fab:fab_addButtonStrokeVisible="true"
+        fab:fab_icon="@drawable/ic_add_icon">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABBetalen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fadeScrollbars="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/ColorActionPressed"
+            fab:fab_icon="@drawable/ic_camera"
+            fab:fab_title="QR code" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fadeScrollbars="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/ColorActionPressed"
+            fab:fab_icon="@drawable/ic_refresh"
+            fab:fab_title="Refresh" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <TextView
+        android:id="@+id/txtWelkomActie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Wat wil je doen?"
+        android:textSize="12pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelkom"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnUitloggen"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Uitloggen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccount"
+        tools:ignore="HardcodedText" />
+
     <TextView
         android:id="@+id/txtWelkom"
         android:layout_width="wrap_content"
@@ -24,44 +100,17 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/txtWelkomActie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:textSize="12pt"
-        android:text="Wat wil je doen?"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtWelkom"
-        tools:ignore="HardcodedText" />
-
     <Button
-        android:id="@+id/btnAccount"
+        android:id="@+id/btnBetalen"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Account"
+        android:layout_marginTop="24dp"
+        android:text="Betalen"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOntvangen"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:id="@+id/btnUitloggen"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Uitloggen"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAccount"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelkomActie"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -78,63 +127,17 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/btnBetalen"
+        android:id="@+id/btnAccount"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="24dp"
-        android:text="Betalen"
+        android:layout_marginTop="8dp"
+        android:text="Account"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtWelkomActie"
+        app:layout_constraintTop_toBottomOf="@+id/btnOntvangen"
         tools:ignore="HardcodedText" />
-
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/ftMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:fadeScrollbars="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        fab:fab_addButtonColorNormal="@color/colorPrimary"
-        fab:fab_addButtonColorPressed="@color/ColorActionPressed"
-        fab:fab_icon="@drawable/ic_add_icon">
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/FABBetalen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:fadeScrollbars="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            fab:fab_colorNormal="@color/colorPrimary"
-            fab:fab_colorPressed="@color/ColorActionPressed"
-            fab:fab_icon="@drawable/ic_camera"
-            fab:fab_title="QR_code"/>
-
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/FABRefresh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:fadeScrollbars="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            fab:fab_colorNormal="@color/colorPrimary"
-            fab:fab_colorPressed="@color/ColorActionPressed"
-            fab:fab_icon="@drawable/ic_refresh"
-            fab:fab_title="Refresh"/>
-
-
-
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 
 </android.support.constraint.ConstraintLayout>
