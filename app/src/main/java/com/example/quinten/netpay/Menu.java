@@ -134,5 +134,14 @@ public class Menu extends Activity {
             }
         });
 
+
+
+        findViewById(R.id.FABRefresh).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
+
     }
 }
