@@ -97,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
                                         String strGebruikersnaamResp = jsonReponse.getString("Gebruikersnaam");
                                         String strVoornaamResp = jsonReponse.getString("Voornaam");
                                         String strAchternaamResp = jsonReponse.getString("Achternaam");
-                                        String strWachtwoordResp = jsonReponse.getString("Wachtwoord");
                                         String strSaldoResp = jsonReponse.getString("Saldo");
 
 
@@ -109,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
                                         editor.putString("gebruikersnaam", strGebruikersnaamResp);
                                         editor.putString("voornaam", strVoornaamResp);
                                         editor.putString("achternaam", strAchternaamResp);
-                                        editor.putString("wachtwoord", strWachtwoordResp);
                                         editor.putString("saldo", strSaldoResp);
                                         editor.apply();
 

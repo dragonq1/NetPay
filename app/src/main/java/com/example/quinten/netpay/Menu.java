@@ -10,6 +10,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.quinten.methods.InternetStatus;
+import com.example.quinten.methods.RefreshUserData;
 
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
@@ -60,7 +64,8 @@ public class Menu extends Activity {
         //Gegevens ophalen
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
         String strVoornaam = settings.getString("voornaam", "");
-        String strAchternaam = settings.getString("achternaam", "");
+        final String strGebruikersnaam = settings.getString("gebruikersnaam", "");
+        //String strAchternaam = settings.getString("achternaam", "");
         //String strID = settings.getString("ID", "");
 
         //Welkom bericht personaliseren
@@ -139,7 +144,15 @@ public class Menu extends Activity {
         findViewById(R.id.FABRefresh).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
+                InternetStatus IS = new InternetStatus();
+                boolean is = IS.getInternetStatus(getApplicationContext());
+                if(is) {
+                    RefreshUserData refreshUserData = new RefreshUserData();
+                    refreshUserData.refreshData(strGebruikersnaam, getApplicationContext());
+                }else{
+                    Toast.makeText(getApplicationContext(), "Geen internet verbinding!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
