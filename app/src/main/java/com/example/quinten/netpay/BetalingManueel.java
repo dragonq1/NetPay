@@ -111,7 +111,7 @@ public class BetalingManueel extends AppCompatActivity {
                                                             intent.putExtra("ActionButton", "false");
                                                             startActivity(intent);
                                                             break;
-                                                        case "empty ontvanger":
+                                                        case "error-01":
                                                             Toast.makeText(getApplicationContext(), "Kan ontvanger niet vinden!", Toast.LENGTH_LONG).show();
                                                             break;
                                                         case "Statement 3":
@@ -161,7 +161,7 @@ public class BetalingManueel extends AppCompatActivity {
                         builderBevestigen.create();
                         builderBevestigen.show();
                     }else{
-                        Toast.makeText(getApplicationContext(), "Vul een geldige bedrag!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Vul een geldig bedrag in!", Toast.LENGTH_LONG).show();
                     }
                 }else{
                     Toast.makeText(getApplicationContext(), "Vul een geldige gebruikersnaam in!", Toast.LENGTH_LONG).show();
