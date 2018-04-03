@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import com.example.quinten.methods.InternetStatus;
 import com.example.quinten.methods.RefreshUserData;
+import com.example.quinten.methods.refreshToken;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
@@ -67,6 +69,11 @@ public class Menu extends Activity {
         final String strGebruikersnaam = settings.getString("gebruikersnaam", "");
         //String strAchternaam = settings.getString("achternaam", "");
         //String strID = settings.getString("ID", "");
+
+        //Token refreshen
+        String idToken = FirebaseInstanceId.getInstance().getToken();
+        refreshToken refreshToken = new refreshToken();
+        refreshToken.refreshidToken(idToken, strGebruikersnaam, getApplicationContext());
 
         //Welkom bericht personaliseren
         String strWelkomBericht = strVoornaam.substring(0,1).toUpperCase() + strVoornaam.substring(1) + "!";
