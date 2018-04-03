@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\b811cae71aa96dedcbfd7422a66e1584\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\c9d379bb08ab137c80ba8cb22cb2ab9a\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6648db5269b278c3a210a18f1dd74a1b\AndroidManifest.xml:2:1-11:12
@@ -28,20 +28,20 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\user\.g
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\a4faf50b7d708abaef93e5171de52468\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\6a7d1d222a2634c798dfcd72b6d7095d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\97bff32de6dc9a14e27e2dc1120cd75d\AndroidManifest.xml:17:1-31:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:11-69
@@ -88,7 +88,7 @@ MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\user\.gradle\cach
 	android:name
 		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:12:22-76
 application
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:14:5-46:19
+ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:14:5-47:19
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\b811cae71aa96dedcbfd7422a66e1584\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\b811cae71aa96dedcbfd7422a66e1584\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\c9d379bb08ab137c80ba8cb22cb2ab9a\AndroidManifest.xml:29:5-20
@@ -193,24 +193,24 @@ activity#com.example.quinten.netpay.OntvangenInfo
 ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:35:9-51
 	android:name
 		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:35:19-48
-service#com.example.quinten.netpay.MyFirebaseMessagingService
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:37:9-41:19
-	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:37:18-60
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:38:13-40:29
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:39:17-80
-	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:39:25-77
-service#com.example.quinten.Services.MyFirebaseMessagingService
-ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:42:9-45:47
+service#com.example.quinten.services.MyFirebaseMessagingService
+ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:37:9-40:39
 	android:enabled
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:44:13-35
+		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:39:13-35
 	android:exported
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:45:13-36
+		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:40:13-36
 	android:name
-		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:43:13-83
+		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:38:13-83
+service#com.example.quinten.services.MyFirebaseInstanceIDService
+ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:41:9-46:19
+	android:name
+		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:42:13-84
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:43:13-45:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:44:17-79
+	android:name
+		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:44:25-77
 uses-sdk
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml

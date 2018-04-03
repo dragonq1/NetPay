@@ -34,15 +34,16 @@
         <activity android:name=".BetalingManueel" />
         <activity android:name=".OntvangenInfo" />
 
-        <service android:name=".MyFirebaseMessagingService">
+        <service
+            android:name="com.example.quinten.services.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.quinten.services.TokenRefresh">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
-        <service
-            android:name="com.example.quinten.Services.MyFirebaseMessagingService"
-            android:enabled="true"
-            android:exported="true"></service>
     </application>
 
 </manifest>

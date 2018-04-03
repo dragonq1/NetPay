@@ -1,4 +1,4 @@
-package com.example.quinten.Services;
+package com.example.quinten.services;
 
 import android.app.NotificationManager;
 import android.content.Context;

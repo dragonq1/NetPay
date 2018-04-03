@@ -68,15 +68,15 @@
         <activity android:name="com.example.quinten.netpay.BetalingManueel" />
         <activity android:name="com.example.quinten.netpay.OntvangenInfo" />
 
-        <service android:name="com.example.quinten.netpay.MyFirebaseMessagingService" >
+        <service
+            android:name="com.example.quinten.services.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name="com.example.quinten.services.MyFirebaseInstanceIDService" >
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service
-            android:name="com.example.quinten.Services.MyFirebaseMessagingService"
-            android:enabled="true"
-            android:exported="true" />
 
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
