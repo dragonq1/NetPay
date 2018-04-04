@@ -52,6 +52,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_not_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
         <activity android:name="com.example.quinten.netpay.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,10 +75,11 @@
         <activity android:name="com.example.quinten.netpay.BetalingManueel" />
         <activity android:name="com.example.quinten.netpay.OntvangenInfo" />
 
-        <service
-            android:name="com.example.quinten.services.MyFirebaseMessagingService"
-            android:enabled="true"
-            android:exported="true" />
+        <service android:name="com.example.quinten.services.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
         <service android:name="com.example.quinten.services.TokenRefresh" >
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />

@@ -26,10 +26,8 @@ public class refreshToken {
                     boolean success = jsonReponse.getBoolean("success");
 
                     if (success) {
-                        Toast.makeText(context.getApplicationContext(), "Test", Toast.LENGTH_LONG).show();
                         Log.d("Error", "Update token was succesfull");
                     } else {
-                        Toast.makeText(context.getApplicationContext(), "error:", Toast.LENGTH_LONG).show();
                         Log.d("Error", jsonReponse.getString("error"));
                     }
 

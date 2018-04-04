@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -99,6 +100,8 @@ public class BetalingManueel extends AppCompatActivity {
                                                             Toast.makeText(getApplicationContext(), "Transactie geslaagd!", Toast.LENGTH_LONG).show();
                                                             txtBedrag.setText("");
                                                             txtGebruikersnaam.setText("");
+
+                                                            Log.d("Not", jsonResponse.getString("erron"));
 
                                                             //Saldo aanpassen
                                                             SharedPreferences.Editor editor = settings.edit();
