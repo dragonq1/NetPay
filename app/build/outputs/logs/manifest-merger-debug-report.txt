@@ -11,6 +11,7 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\user\.gradle\cach
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\19a651ad6d89698403578e9dfda19073\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b06ef9f03d68edbfa2f788cb24053788\AndroidManifest.xml:2:1-11:12
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:17:1-55:12
+MERGED from [com.github.dmytrodanylyk.android-process-button:library:1.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\library-1.0.4.aar\042c228894ad2ebdc4077f8e764559a3\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:16:1-35:12
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\7dc9f2c3de131ce93f768546a4729a9f\AndroidManifest.xml:16:1-29:12
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\72cedfda812559b33292ba091567694a\AndroidManifest.xml:16:1-50:12
@@ -248,6 +249,8 @@ MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\trans
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b06ef9f03d68edbfa2f788cb24053788\AndroidManifest.xml:7:5-43
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:19:5-43
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:19:5-43
+MERGED from [com.github.dmytrodanylyk.android-process-button:library:1.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\library-1.0.4.aar\042c228894ad2ebdc4077f8e764559a3\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.dmytrodanylyk.android-process-button:library:1.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\library-1.0.4.aar\042c228894ad2ebdc4077f8e764559a3\AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\7dc9f2c3de131ce93f768546a4729a9f\AndroidManifest.xml:17:5-43

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     android:paddingBottom="150dp"
@@ -57,6 +58,19 @@
         android:background="@null"
         android:text="Nog geen lid? Registreer nu."
         android:textAllCaps="false" />
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/btnAanmeldenTest"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:text="Aanmelden"
+        android:textAllCaps="true"
+        app:pb_colorComplete="@color/ColorGreyHard"
+        app:pb_colorNormal="@color/ColorGreySoft"
+        app:pb_colorPressed="@color/ColorGreyHard"
+        app:pb_colorProgress="@color/ColorGreyHard"
+        app:pb_textComplete="Ingelogd!" />
 
     <ProgressBar
         android:id="@+id/prbLogin"

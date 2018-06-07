@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.dd.processbutton.iml.ActionProcessButton;
 import com.example.quinten.methods.InternetStatus;
 import com.example.quinten.requests.LoginRequest;
 
@@ -51,11 +52,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Vars
-        final Button btnLogin = (Button) findViewById(R.id.btnLogin);
-        final Button btnReg = (Button) findViewById(R.id.btnRegister);
-        final ProgressBar prgLogin = (ProgressBar) findViewById(R.id.prbLogin);
-        final EditText txtGebruiksnaam = (EditText)findViewById(R.id.txtNaam);
-        final EditText txtWachtwoord = (EditText)findViewById(R.id.txtWachtwoordBetaling);
+        final Button btnLogin = findViewById(R.id.btnLogin);
+        final Button btnReg = findViewById(R.id.btnRegister);
+        final ActionProcessButton btnLoginTest = findViewById(R.id.btnAanmeldenTest);
+        final ProgressBar prgLogin = findViewById(R.id.prbLogin);
+        final EditText txtGebruiksnaam = findViewById(R.id.txtNaam);
+        final EditText txtWachtwoord = findViewById(R.id.txtWachtwoordBetaling);
+
+
 
 
         //ProgressSpiner onzichtbaar maken
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 //Internet connectie nakijken
                 InternetStatus IS = new InternetStatus();
                 boolean is = IS.getInternetStatus(getApplicationContext());
+
 
                 if(is) {
                     //Nakijken of alle velden zijn ingevuld

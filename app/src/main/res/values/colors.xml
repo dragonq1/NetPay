@@ -5,6 +5,8 @@
     <color name="colorAccent">#8e0c1d</color>
     <color name="black">#000000</color>
     <color name="ColorActionPressed">#770816</color>
+    <color name="ColorGreySoft">#c4cad3</color>
 
     <color name="black_overlay">#66000000</color>
+    <color name="ColorGreyHard">#898d93</color>
 </resources>

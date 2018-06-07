@@ -63,6 +63,7 @@ public class Menu extends Activity {
         final Button btnAccount = findViewById(R.id.btnAccount);
         final Button btnUitloggen = findViewById(R.id.btnUitloggen);
 
+
         //Gegevens ophalen
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
         String strVoornaam = settings.getString("voornaam", "");
