@@ -4,20 +4,20 @@ ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManif
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-62:12
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-62:12
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:2:1-62:12
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:16:1-30:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e35ab675dfdf51152bf3087288276af6\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6bad31f94a6fdc23526794f2cc57785c\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\19a651ad6d89698403578e9dfda19073\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b06ef9f03d68edbfa2f788cb24053788\AndroidManifest.xml:2:1-11:12
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:17:1-55:12
-MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:16:1-30:12
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:16:1-35:12
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\7dc9f2c3de131ce93f768546a4729a9f\AndroidManifest.xml:16:1-29:12
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\72cedfda812559b33292ba091567694a\AndroidManifest.xml:16:1-50:12
 MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\887838fc3f471a25e5fcfe75e20a5b40\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5ac8734af91248db7a71db38044e7eaf\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\c1b12858fb2fdc14d1e212e63a79da5f\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7184a3de13769e3b4f470ca7965b2783\AndroidManifest.xml:17:1-31:12
 MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\floatingactionbutton-1.10.1.aar\aad6b27bbf2cda3c54d687da54e103b1\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b0c0e9e86034605d251c50c5e838af18\AndroidManifest.xml:17:1-28:12
@@ -90,6 +90,10 @@ MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\user\.gradle\cach
 		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:12:22-76
 application
 ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml:16:5-60:19
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:19:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e35ab675dfdf51152bf3087288276af6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e35ab675dfdf51152bf3087288276af6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6bad31f94a6fdc23526794f2cc57785c\AndroidManifest.xml:25:5-29:19
@@ -100,12 +104,6 @@ MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\trans
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b06ef9f03d68edbfa2f788cb24053788\AndroidManifest.xml:9:5-20
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:45:5-53:19
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:45:5-53:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:24:5-34:19
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:24:5-34:19
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\7dc9f2c3de131ce93f768546a4729a9f\AndroidManifest.xml:24:5-28:19
@@ -118,6 +116,8 @@ MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\user\.g
 MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5ac8734af91248db7a71db38044e7eaf\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\c1b12858fb2fdc14d1e212e63a79da5f\AndroidManifest.xml:19:5-21:19
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\c1b12858fb2fdc14d1e212e63a79da5f\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7184a3de13769e3b4f470ca7965b2783\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7184a3de13769e3b4f470ca7965b2783\AndroidManifest.xml:25:5-29:19
 MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\floatingactionbutton-1.10.1.aar\aad6b27bbf2cda3c54d687da54e103b1\AndroidManifest.xml:12:5-20
@@ -234,6 +234,10 @@ uses-sdk
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
 INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:design:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e35ab675dfdf51152bf3087288276af6\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e35ab675dfdf51152bf3087288276af6\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6bad31f94a6fdc23526794f2cc57785c\AndroidManifest.xml:21:5-23:78
@@ -244,12 +248,6 @@ MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\trans
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b06ef9f03d68edbfa2f788cb24053788\AndroidManifest.xml:7:5-43
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:19:5-43
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:19:5-43
-MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\264b9232891e28338888fae6129b0f73\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\7dc9f2c3de131ce93f768546a4729a9f\AndroidManifest.xml:17:5-43
@@ -262,6 +260,8 @@ MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\user\.g
 MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5ac8734af91248db7a71db38044e7eaf\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\c1b12858fb2fdc14d1e212e63a79da5f\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\c1b12858fb2fdc14d1e212e63a79da5f\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\80086867f77ffdf14bc5a9b53dfa0da3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7184a3de13769e3b4f470ca7965b2783\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7184a3de13769e3b4f470ca7965b2783\AndroidManifest.xml:21:5-23:54
 MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\floatingactionbutton-1.10.1.aar\aad6b27bbf2cda3c54d687da54e103b1\AndroidManifest.xml:8:5-10:41
@@ -296,6 +296,12 @@ INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidMa
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
 		ADDED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Mappen\Documenten\AndroidProjects\NetPay\app\src\main\AndroidManifest.xml
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:23:18-87
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e35ab675dfdf51152bf3087288276af6\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6bad31f94a6fdc23526794f2cc57785c\AndroidManifest.xml:26:9-28:38
@@ -362,12 +368,6 @@ ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\
 		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:51:13-54
 	android:name
 		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\44892fa5378baabdf6635af00f96e375\AndroidManifest.xml:47:13-74
-service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:23:9-27:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:23:88-111
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\c01df47825c5e99088e117984ee43824\AndroidManifest.xml:23:18-87
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\087bfe80db6421e7d1475078804412d6\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\7dc9f2c3de131ce93f768546a4729a9f\AndroidManifest.xml:22:5-67
