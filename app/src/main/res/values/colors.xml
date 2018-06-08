@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#a01023</color>
-    <color name="colorPrimaryDark">#a01023</color>
+    <color name="colorPrimaryDark">#7c0c1b</color>
     <color name="colorAccent">#8e0c1d</color>
     <color name="black">#000000</color>
     <color name="ColorActionPressed">#770816</color>
@@ -9,4 +9,5 @@
 
     <color name="black_overlay">#66000000</color>
     <color name="ColorGreyHard">#898d93</color>
+    <color name="ColorGreenComplete">#10a012</color>
 </resources>

@@ -34,16 +34,20 @@
         android:inputType="textPassword" />
 
 
-    <Button
+    <com.dd.processbutton.iml.ActionProcessButton
         android:id="@+id/btnLogin"
         android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="Aanmelden" />
+        android:layout_height="45dp"
+        android:padding="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Aanmelden"
+        android:textAllCaps="true"
+        app:pb_colorComplete="@color/ColorGreenComplete"
+        app:pb_colorNormal="@color/ColorGreySoft"
+        app:pb_colorPressed="@color/ColorGreyHard"
+        app:pb_colorProgress="@color/ColorGreyHard"
+        app:pb_textComplete="Ingelogd!" />
+
 
 
     <Button
@@ -58,19 +62,6 @@
         android:background="@null"
         android:text="Nog geen lid? Registreer nu."
         android:textAllCaps="false" />
-
-    <com.dd.processbutton.iml.ActionProcessButton
-        android:id="@+id/btnAanmeldenTest"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:padding="0dp"
-        android:text="Aanmelden"
-        android:textAllCaps="true"
-        app:pb_colorComplete="@color/ColorGreyHard"
-        app:pb_colorNormal="@color/ColorGreySoft"
-        app:pb_colorPressed="@color/ColorGreyHard"
-        app:pb_colorProgress="@color/ColorGreyHard"
-        app:pb_textComplete="Ingelogd!" />
 
     <ProgressBar
         android:id="@+id/prbLogin"

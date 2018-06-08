@@ -52,9 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Vars
-        final Button btnLogin = findViewById(R.id.btnLogin);
+        final ActionProcessButton btnLogin = findViewById(R.id.btnLogin);
         final Button btnReg = findViewById(R.id.btnRegister);
-        final ActionProcessButton btnLoginTest = findViewById(R.id.btnAanmeldenTest);
         final ProgressBar prgLogin = findViewById(R.id.prbLogin);
         final EditText txtGebruiksnaam = findViewById(R.id.txtNaam);
         final EditText txtWachtwoord = findViewById(R.id.txtWachtwoordBetaling);
@@ -73,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 //Internet connectie nakijken
                 InternetStatus IS = new InternetStatus();
                 boolean is = IS.getInternetStatus(getApplicationContext());
+                btnLogin.setProgress(25);
+
 
 
                 if(is) {
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     }else{
                         //ProgressSpiner zichtbaar maken
                         prgLogin.setVisibility(View.VISIBLE);
+                        btnLogin.setProgress(50);
 
                         //Vars
                         final String strGebruikersnaam = txtGebruiksnaam.getText().toString();
@@ -97,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                                     boolean success = jsonReponse.getBoolean("success");
 
                                     if (success) {
+                                        btnLogin.setProgress(100);
                                         //Terugekregen gebruikersinfo ophalen
                                         String strID = jsonReponse.getString("ID");
                                         String strGebruikersnaamResp = jsonReponse.getString("Gebruikersnaam");
