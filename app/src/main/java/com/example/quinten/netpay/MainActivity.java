@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
-                                    sendSnackbar("Er ging iets fout! Blijft dit gebeuren, meld dit dan!", findViewById(android.R.id.content));
+                                    sendSnackbar("Er ging iets fout! Blijft dit gebeuren, kan je contact opnemen!", findViewById(android.R.id.content));
                                     btnLogin.setProgress(0);
                                 }
 

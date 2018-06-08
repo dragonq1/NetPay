@@ -1,60 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.quinten.netpay.Registreren"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:layout_editor_absoluteX="0dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:layout_editor_absoluteY="81dp">
 
-    <EditText
-        android:id="@+id/txtVoornaam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Voornaam"
-        android:inputType="textPersonName"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="HardcodedText"
-        android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@+id/txtAchternaam"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp" />
-
-    <EditText
-        android:id="@+id/txtWachtwoordBetaling"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Wachtwoord"
-        android:inputType="textPassword"
-        tools:ignore="HardcodedText"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVoornaam"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.503" />
-
-    <EditText
-        android:id="@+id/txtWachtwoordHerhalen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Wachtwoord herhalen"
-        android:inputType="textPassword"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtWachtwoordBetaling"
-        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/txtGebruikersnaam"
@@ -64,51 +20,73 @@
         android:hint="Gebruikersnaam"
         android:inputType="textPersonName"
         tools:ignore="HardcodedText"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.503" />
+        android:layout_marginTop="14dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/txtVoornaam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Voornaam"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="14dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="138dp" />
 
     <EditText
         android:id="@+id/txtAchternaam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Achternaam"
         android:inputType="textPersonName"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtGebruikersnaam"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="212dp"
-        android:layout_height="54dp"
-        android:text="Registreren"
         tools:ignore="HardcodedText"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/txtWachtwoordHerhalen" />
+        android:layout_marginTop="14dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="78dp" />
 
-    <ProgressBar
-        android:id="@+id/prbRegistreren"
-        style="?android:attr/progressBarStyle"
+
+    <EditText
+        android:id="@+id/txtWachtwoordBetaling"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:ems="10"
+        android:hint="Wachtwoord"
+        android:inputType="textPassword"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="14dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <EditText
+        android:id="@+id/txtWachtwoordHerhalen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Wachtwoord herhalen"
+        android:inputType="textPassword"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="14dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/btnRegister"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:padding="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Registeren"
+        android:textAllCaps="true"
+        app:pb_colorComplete="@color/ColorGreenComplete"
+        app:pb_colorNormal="@color/ColorGreySoft"
+        app:pb_colorPressed="@color/ColorGreyHard"
+        app:pb_colorProgress="@color/ColorGreyHard"
+        app:pb_textComplete="Geregistreerd!" />
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
