@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -79,12 +78,15 @@ public class MainActivity extends AppCompatActivity {
                 boolean is = IS.getInternetStatus(getApplicationContext());
                 btnLogin.setProgress(25);
 
-
+                //Toetsenbord sluiten
+                InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 
                 if(is) {
                     //Nakijken of alle velden zijn ingevuld
                     if(txtGebruiksnaam.getText().toString().equals("") || txtWachtwoord.getText().toString().equals("")) {
-                        sendSnackbar("Controleer de internet verbinding!", findViewById(android.R.id.content));
+                        sendSnackbar("Vul alle velden in!", findViewById(android.R.id.content));
+                        btnLogin.setProgress(0);
                     }else{
                         btnLogin.setProgress(50);
 
@@ -92,8 +94,7 @@ public class MainActivity extends AppCompatActivity {
                         final String strGebruikersnaam = txtGebruiksnaam.getText().toString();
                         final String strWachtwoord = txtWachtwoord.getText().toString();
 
-                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+
 
 
                         Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -161,7 +162,8 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }else{
-                    Toast.makeText(getApplicationContext(), "Geen internet verbinding!", Toast.LENGTH_LONG).show();
+                    sendSnackbar("Controleer de internet verbinding!", findViewById(android.R.id.content));
+                    btnLogin.setProgress(0);
                 }
             }
         });
