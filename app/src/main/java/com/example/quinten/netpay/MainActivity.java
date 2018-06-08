@@ -3,11 +3,14 @@ package com.example.quinten.netpay;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -22,6 +25,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
     public static final String USER_INFO = "UserInfo";
+    private CoordinatorLayout coordinatorLayout;
 
 
     //Edit texts resetten
@@ -54,15 +58,16 @@ public class MainActivity extends AppCompatActivity {
         //Vars
         final ActionProcessButton btnLogin = findViewById(R.id.btnLogin);
         final Button btnReg = findViewById(R.id.btnRegister);
-        final ProgressBar prgLogin = findViewById(R.id.prbLogin);
         final EditText txtGebruiksnaam = findViewById(R.id.txtNaam);
         final EditText txtWachtwoord = findViewById(R.id.txtWachtwoordBetaling);
 
 
 
 
-        //ProgressSpiner onzichtbaar maken
-        prgLogin.setVisibility(View.INVISIBLE);
+
+
+
+
 
         //Button listeners
         //Login
@@ -79,16 +84,16 @@ public class MainActivity extends AppCompatActivity {
                 if(is) {
                     //Nakijken of alle velden zijn ingevuld
                     if(txtGebruiksnaam.getText().toString().equals("") || txtWachtwoord.getText().toString().equals("")) {
-                        Toast.makeText(getApplicationContext(), "Vul alle velden in!", Toast.LENGTH_LONG).show();
+                        sendSnackbar("Controleer de internet verbinding!", findViewById(android.R.id.content));
                     }else{
-                        //ProgressSpiner zichtbaar maken
-                        prgLogin.setVisibility(View.VISIBLE);
                         btnLogin.setProgress(50);
 
                         //Vars
                         final String strGebruikersnaam = txtGebruiksnaam.getText().toString();
                         final String strWachtwoord = txtWachtwoord.getText().toString();
 
+                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 
 
                         Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -124,30 +129,25 @@ public class MainActivity extends AppCompatActivity {
                                         Intent intent = new Intent(getApplicationContext(), Menu.class);
                                         startActivity(intent);
 
-                                        //ProgressSpiner onzichtbaar maken
-                                        prgLogin.setVisibility(View.INVISIBLE);
 
                                     } else if(jsonReponse.getString("error").equals("error-01")) {
-                                        Toast.makeText(getApplicationContext(), "Gebruikersnaam of wachtwoord incorrect!", Toast.LENGTH_LONG).show();
-                                        //ProgressSpiner onzichtbaar maken
-                                        prgLogin.setVisibility(View.INVISIBLE);
+                                        sendSnackbar("Wachtwoord of gebruikersnaam ongeldig!", findViewById(android.R.id.content));
+                                        btnLogin.setProgress(0);
 
                                     }else if(jsonReponse.getString("error").equals("error-02")) {
-                                        Toast.makeText(getApplicationContext(), "Gebruikersnaam of wachtwoord incorrect!", Toast.LENGTH_LONG).show();
-                                        //ProgressSpiner onzichtbaar maken
-                                        prgLogin.setVisibility(View.INVISIBLE);
+                                        sendSnackbar("Wachtwoord of gebruikersnaam incorrect!", findViewById(android.R.id.content));
+                                        btnLogin.setProgress(0);
 
                                     }else{
-                                        Toast.makeText(getApplicationContext(), "ERROR 1: " + jsonReponse.getString("error"), Toast.LENGTH_LONG).show();
-                                        //ProgressSpiner onzichtbaar maken
-                                        prgLogin.setVisibility(View.INVISIBLE);
+                                        Log.e("ERROR", "onResponse: " + jsonReponse.getString("error"));
+                                        sendSnackbar("Er ging iets fout! Blijft dit gebeuren, meld dit dan!", findViewById(android.R.id.content));
+                                        btnLogin.setProgress(0);
                                     }
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
-                                    Toast.makeText(getApplicationContext(), "ERROR 1: " + " " +  e.getMessage(), Toast.LENGTH_SHORT).show();
-                                    //ProgressSpiner onzichtbaar maken
-                                    prgLogin.setVisibility(View.INVISIBLE);
+                                    sendSnackbar("Er ging iets fout! Blijft dit gebeuren, meld dit dan!", findViewById(android.R.id.content));
+                                    btnLogin.setProgress(0);
                                 }
 
                             }
@@ -178,5 +178,11 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+    }
+
+    //Snack notificatie
+    public void sendSnackbar(String strBericht, View v) {
+        Snackbar snackbar = Snackbar.make(v, strBericht, Snackbar.LENGTH_LONG);
+        snackbar.show();
     }
 }
