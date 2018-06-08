@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
@@ -24,6 +25,13 @@ import org.json.JSONObject;
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class BetalingManueel extends AppCompatActivity {
+
+    //Snack notificatie
+    public void sendSnackbar(String strBericht, View v) {
+        Snackbar snackbar = Snackbar.make(v, strBericht, Snackbar.LENGTH_LONG);
+        snackbar.show();
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -97,7 +105,7 @@ public class BetalingManueel extends AppCompatActivity {
 
                                                     switch (success) {
                                                         case "success":
-                                                            Toast.makeText(getApplicationContext(), "Transactie geslaagd!", Toast.LENGTH_LONG).show();
+                                                            sendSnackbar("Transactie geslaagd!", findViewById(android.R.id.content));
                                                             txtBedrag.setText("");
                                                             txtGebruikersnaam.setText("");
 
@@ -115,19 +123,21 @@ public class BetalingManueel extends AppCompatActivity {
                                                             startActivity(intent);
                                                             break;
                                                         case "error-01":
-                                                            Toast.makeText(getApplicationContext(), "Kan ontvanger niet vinden!", Toast.LENGTH_LONG).show();
+                                                            sendSnackbar("Kan ontvanger niet vinden!", findViewById(android.R.id.content));
                                                             break;
                                                         case "Statement 3":
-                                                            Toast.makeText(getApplicationContext(), "Statement 3", Toast.LENGTH_LONG).show();
+                                                            sendSnackbar("Er ging iets fout", findViewById(android.R.id.content));
+                                                            Log.e("ERROR", "onResponse: " + "Statement 3");
                                                             break;
                                                         case "false":
-                                                            Toast.makeText(getApplicationContext(), "false", Toast.LENGTH_LONG).show();
+                                                            sendSnackbar("Er ging uets fout", findViewById(android.R.id.content));
+                                                            Log.e("ERROR", "onResponse: " + "false");
                                                             break;
                                                         case "wachtwoord":
-                                                            Toast.makeText(getApplicationContext(), "Incorrect wachtwoord", Toast.LENGTH_LONG).show();
+                                                            sendSnackbar("Incorrect wachtwoord!", findViewById(android.R.id.content));
                                                             break;
                                                         default:
-                                                            Toast.makeText(getApplicationContext(), success, Toast.LENGTH_LONG).show();
+                                                            sendSnackbar("Er ging iets fout", findViewById(android.R.id.content));
                                                             break;
                                                     }
 
@@ -146,11 +156,11 @@ public class BetalingManueel extends AppCompatActivity {
 
                                     } else {
                                         //Saldo ontoerijkend
-                                        Toast.makeText(getApplicationContext(), "Saldo ontoerijkend!", Toast.LENGTH_LONG).show();
+                                        sendSnackbar("Saldo ontoerijkend!", findViewById(android.R.id.content));
                                     }
                                 } else {
                                     //Gebruikersnaam is hetzelfde
-                                    Toast.makeText(getApplicationContext(), "Je kan geen geen betaling aan jezelf doen!", Toast.LENGTH_LONG).show();
+                                    sendSnackbar("Je kan geen geen betaling aan jezelf doen!", findViewById(android.R.id.content));
                                 }
 
                             }
@@ -164,10 +174,10 @@ public class BetalingManueel extends AppCompatActivity {
                         builderBevestigen.create();
                         builderBevestigen.show();
                     }else{
-                        Toast.makeText(getApplicationContext(), "Vul een geldig bedrag in!", Toast.LENGTH_LONG).show();
+                        sendSnackbar("Vul een geldig bedrag in!", findViewById(android.R.id.content));
                     }
                 }else{
-                    Toast.makeText(getApplicationContext(), "Vul een geldige gebruikersnaam in!", Toast.LENGTH_LONG).show();
+                    sendSnackbar("Vul een geldig bedrag in!", findViewById(android.R.id.content));
                 }
             }
         });

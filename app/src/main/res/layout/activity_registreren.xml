@@ -14,7 +14,7 @@
 
     <EditText
         android:id="@+id/txtGebruikersnaam"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Gebruikersnaam"
@@ -26,7 +26,7 @@
 
     <EditText
         android:id="@+id/txtVoornaam"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Voornaam"
@@ -38,7 +38,7 @@
 
     <EditText
         android:id="@+id/txtAchternaam"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Achternaam"
@@ -51,7 +51,7 @@
 
     <EditText
         android:id="@+id/txtWachtwoordBetaling"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Wachtwoord"
@@ -63,7 +63,7 @@
 
     <EditText
         android:id="@+id/txtWachtwoordHerhalen"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Wachtwoord herhalen"
