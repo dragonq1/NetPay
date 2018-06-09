@@ -54,10 +54,10 @@ public class OntvangenInfo extends AppCompatActivity {
 
 
         //Vars
-        final EditText txtBedrag = (EditText) findViewById(R.id.txtBedragQR);
-        final Button btnGenerate = (Button) findViewById(R.id.btnGenerate);
-        final ProgressBar prgQRCode = (ProgressBar) findViewById(R.id.prgQRCode);
-        final ImageView LVQRCode = (ImageView) findViewById(R.id.lvQRCode);
+        final EditText txtBedrag = findViewById(R.id.txtBedragQR);
+        final Button btnGenerate = findViewById(R.id.btnGenerate);
+        final ProgressBar prgQRCode = findViewById(R.id.prgQRCode);
+        final ImageView LVQRCode = findViewById(R.id.lvQRCode);
         prgQRCode.setVisibility(View.INVISIBLE);
 
         //Gegevens gebruiker ophalen

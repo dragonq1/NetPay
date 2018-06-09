@@ -60,14 +60,13 @@ public class BetalingManueel extends AppCompatActivity {
 
         //Vars
         final SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
-        final EditText txtGebruikersnaam = (EditText) findViewById(R.id.txtGebruikersnaamMan);
-        final EditText txtBedrag = (EditText) findViewById(R.id.txtBedragBetaling);
+        final EditText txtGebruikersnaam = findViewById(R.id.txtGebruikersnaamMan);
+        final EditText txtBedrag = findViewById(R.id.txtBedragBetaling);
 
         final Double dblSaldo = Double.parseDouble(settings.getString("saldo", ""));
-        final String strID = settings.getString("ID", "");
 
-        final Button btnBevestigen = (Button) findViewById(R.id.btnBevestigen);
-        final Button btnAnnuleren = (Button) findViewById(R.id.btnAnnuleren);
+        final Button btnBevestigen = findViewById(R.id.btnBevestigen);
+        final Button btnAnnuleren = findViewById(R.id.btnAnnuleren);
 
         final String gebruikersnaam = settings.getString("gebruikersnaam", "");
 

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
     tools:context="com.example.quinten.netpay.BetalingManueel">
 
     <EditText
         android:id="@+id/txtiBegunstigde"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="0dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="8dp"
         android:background="@null"
         android:ems="10"
@@ -29,35 +28,9 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
-        android:id="@+id/txtiBedrag"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="32dp"
-        android:background="@null"
-        android:ems="10"
-        android:enabled="false"
-        android:inputType="textPersonName"
-        android:text="Voor een bedrag van"
-        android:textColor="#000"
-        android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="HardcodedText,RtlHardcoded"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="128dp" />
-
-    <EditText
         android:id="@+id/txtGebruikersnaamMan"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txtiBegunstigde"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="14dp"
@@ -73,12 +46,29 @@
         tools:ignore="HardcodedText" />
 
     <EditText
+        android:id="@+id/txtiBedrag"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="32dp"
+        android:background="@null"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Voor een bedrag van"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <EditText
         android:id="@+id/txtBedragBetaling"
         android:layout_width="300dp"
         android:layout_height="49dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txtiBegunstigde"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="14dp"
@@ -122,4 +112,4 @@
         tools:ignore="HardcodedText"
         app:layout_constraintVertical_bias="0.0" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

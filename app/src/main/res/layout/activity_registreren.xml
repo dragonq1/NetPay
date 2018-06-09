@@ -19,7 +19,7 @@
         android:hint="Gebruikersnaam"
         android:inputType="textPersonName"
         tools:ignore="HardcodedText"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -31,7 +31,7 @@
         android:hint="Voornaam"
         android:inputType="textPersonName"
         tools:ignore="HardcodedText"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="138dp" />
 
@@ -43,7 +43,7 @@
         android:hint="Achternaam"
         android:inputType="textPersonName"
         tools:ignore="HardcodedText"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="78dp" />
 
@@ -56,7 +56,7 @@
         android:hint="Wachtwoord"
         android:inputType="textPassword"
         tools:ignore="HardcodedText"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="200dp" />
 
@@ -68,7 +68,7 @@
         android:hint="Wachtwoord herhalen"
         android:inputType="textPassword"
         tools:ignore="HardcodedText"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="261dp" />
 
