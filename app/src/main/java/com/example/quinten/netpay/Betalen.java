@@ -4,8 +4,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +28,12 @@ import org.json.JSONObject;
 import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class Betalen extends AppCompatActivity {
+
+    //Snack notificatie
+    public void sendSnackbar(String strBericht, View v) {
+        Snackbar snackbar = Snackbar.make(v, strBericht, Snackbar.LENGTH_LONG);
+        snackbar.show();
+    }
 
     @Override
     public void onBackPressed() {
@@ -98,15 +106,16 @@ public class Betalen extends AppCompatActivity {
                     try {
                         getQRCodeInfo(result.getContents());
                     }catch(Exception e) {
-                        Toast.makeText(getApplicationContext(), "ERROR 2!" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
+                        Log.e("ERROR", "onActivityResult: " + e.getMessage());
+                        sendSnackbar("Oeps, er ging iets fout!", findViewById(android.R.id.content));
                     }
                 }else{
-                    Toast.makeText(getApplicationContext(), "QR-code ongeldig!", Toast.LENGTH_LONG).show();
+                    sendSnackbar("QR-code ongeldig!", findViewById(android.R.id.content));
                 }
 
             }
         }else{
-            Toast.makeText(getApplicationContext(), "Geen QR-code gevonden!", Toast.LENGTH_LONG).show();
+            sendSnackbar("Geen QR-code gevonden!", findViewById(android.R.id.content));
         }
     }
 
@@ -139,19 +148,24 @@ public class Betalen extends AppCompatActivity {
 
 
                     }else if(jsonReponse.getString("error").equals("empty")) {
-                        Toast.makeText(getApplicationContext(), "Geen betaling gevonden!", Toast.LENGTH_LONG).show();
+                        sendSnackbar("Geen betaling gevonden!", findViewById(android.R.id.content));
                     }
 
                     else {
                         if (jsonReponse.getString("error").isEmpty()) {
-                            Toast.makeText(getApplicationContext(), "Er ging iets fout!" + jsonReponse.getString("success"), Toast.LENGTH_LONG).show();
+                            Log.e("ERROR", "onResponse: " + jsonReponse.getString("success"));
+                            sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
                         }else{
-                            Toast.makeText(getApplicationContext(), "Er ging iets fout!" + " 1 " +jsonReponse.getString("success") + " 2 " + jsonReponse.getString("error"), Toast.LENGTH_LONG).show();
+                            Log.e("ERROR", "onResponse: " + jsonReponse.getString("success"));
+                            sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
                         }
                     }
 
                 } catch (JSONException e) {
-                    Toast.makeText(getApplicationContext(), "ERROR 9!" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                    Log.e("ERROR", "onResponse: " + e.getMessage());
+                    sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
+
                 }
 
             }
@@ -164,7 +178,7 @@ public class Betalen extends AppCompatActivity {
     }
 
     //Betaling methode
-    public void betaling(String gbnOntvanger, final String bedrag, String qrCode) {
+    public void betaling(String gbnOntvanger, final String bedrag, String qrCode, String wachtwoord) {
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -174,7 +188,7 @@ public class Betalen extends AppCompatActivity {
 
                     switch(success) {
                         case "success":
-                            Toast.makeText(getApplicationContext(), "Transactie geslaagd!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Betaling succesvol!", Toast.LENGTH_LONG).show();
 
 
                             //Saldo aanpassen
@@ -194,20 +208,24 @@ public class Betalen extends AppCompatActivity {
 
                             break;
                         case "Statement 2":
-                            Toast.makeText(getApplicationContext(), "Statement 2", Toast.LENGTH_LONG).show();
+                            Log.e("ERROR", "onResponse: statement 3");
+                            sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
                             break;
                         case "Statement 3":
-                            Toast.makeText(getApplicationContext(), "Statement 3", Toast.LENGTH_LONG).show();
+                            Log.e("ERROR", "onResponse: statement 3");
+                            sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
                             break;
                         case "false":
-                            Toast.makeText(getApplicationContext(), "false", Toast.LENGTH_LONG).show();
+                            Log.e("ERROR", "onResponse: false");
+                            sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
                             break;
                         case "wachtwoord":
-                            Toast.makeText(getApplicationContext(), "Wachtwoord incorrect!", Toast.LENGTH_LONG).show();
+                            sendSnackbar("Wachtwoord incorrect!", findViewById(android.R.id.content));
                             AlertDialog(_QRCodeInfo);
                             break;
                         default:
-                            Toast.makeText(getApplicationContext(), success, Toast.LENGTH_LONG).show();
+                            Log.e("ERROR", "onResponse: " + success);
+                            sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
                             break;
                     }
 
@@ -221,7 +239,7 @@ public class Betalen extends AppCompatActivity {
         SharedPreferences settings = getSharedPreferences(USER_INFO, 0);
         String gebruikersnaamBetaler = settings.getString("gebruikersnaam", "");
 
-        BetalingQRRequest betalingQRRequest = new BetalingQRRequest(gbnOntvanger, gebruikersnaamBetaler, bedrag, qrCode, responseListener);
+        BetalingQRRequest betalingQRRequest = new BetalingQRRequest(gbnOntvanger, gebruikersnaamBetaler, bedrag, qrCode, wachtwoord, responseListener);
         RequestQueue queue = Volley.newRequestQueue(Betalen.this);
         queue.add(betalingQRRequest);
     }
@@ -243,10 +261,10 @@ public class Betalen extends AppCompatActivity {
             String strgbnBetaler = settings.getString("gebruikersnaam", "");
 
             if(dblSaldo < dblBedrag) {
-                Toast.makeText(getApplicationContext(), "Saldo ontoerijkend!", Toast.LENGTH_LONG).show();
+                sendSnackbar("Saldo ontoerijkend!", findViewById(android.R.id.content));
             }
             else if(strgbnBetaler.equals(strGebruikersnaam)) {
-                Toast.makeText(getApplicationContext(), "Je kan geen betaling aan jezelf doen!", Toast.LENGTH_LONG).show();
+                sendSnackbar("Je kan geen betaling aan jezelf doen!", findViewById(android.R.id.content));
             }else{
 
                 View v = getLayoutInflater().inflate(R.layout.dialogbox_betaling, null);
@@ -267,10 +285,11 @@ public class Betalen extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         //Wachtwoord en veld nakijken
                         if(txtWachtwoord.getText().toString().equals("")) {
-                            Toast.makeText(getApplicationContext(), "Vul je wachtwoord in!", Toast.LENGTH_LONG).show();
+                            sendSnackbar("Bevestig de betaling met je wachtwoord!", findViewById(android.R.id.content));
                             AlertDialog(QRCodeInfo);
                         }else{
-                            betaling(strGebruikersnaam, strBedrag, stridCode);
+                            String strWachtwoord = txtWachtwoord.getText().toString();
+                            betaling(strGebruikersnaam, strBedrag, stridCode, strWachtwoord);
                         }
 
                     }
@@ -289,7 +308,9 @@ public class Betalen extends AppCompatActivity {
             }
 
         }catch(Exception e) {
-            Toast.makeText(getApplicationContext(), "ERROR 3!" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+            Log.e("ERROR", "AlertDialog: " + e.getMessage());
+            sendSnackbar("Oeps!, er ging iets fout!", findViewById(android.R.id.content));
         }
 
 
