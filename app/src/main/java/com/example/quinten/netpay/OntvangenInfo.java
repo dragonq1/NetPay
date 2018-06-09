@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -31,6 +32,12 @@ import static com.example.quinten.netpay.MainActivity.USER_INFO;
 
 public class OntvangenInfo extends AppCompatActivity {
 
+
+    //Snack notificatie
+    public void sendSnackbar(String strBericht, View v) {
+        Snackbar snackbar = Snackbar.make(v, strBericht, Snackbar.LENGTH_LONG);
+        snackbar.show();
+    }
 
     @Override
     public void onBackPressed() {
@@ -61,7 +68,8 @@ public class OntvangenInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(txtBedrag.getText().toString().equals("")) {
-                    Toast.makeText(getApplicationContext(), "Gelieve een bedrag in te vullen!", Toast.LENGTH_LONG).show();
+                    sendSnackbar("Gelieve een bedrag in te vullen!", findViewById(android.R.id.content));
+                    LVQRCode.setImageBitmap(null);
                 }else{
                     prgQRCode.setVisibility(View.VISIBLE);
                     //Code genereren
@@ -87,24 +95,29 @@ public class OntvangenInfo extends AppCompatActivity {
                                     LVQRCode.setImageBitmap(bitmap);
 
                                 }catch(WriterException e) {
-                                    Toast.makeText(getApplicationContext(), "ERROR 6" + e.getMessage(), Toast.LENGTH_LONG).show();
+                                    Log.e("ERROR", "onResponse: " + e.getMessage());
+                                    sendSnackbar("Er ging iets fout!", findViewById(android.R.id.content));
+                                    LVQRCode.setImageBitmap(null);
                                 }
 
 
 
-                                    Toast.makeText(getApplicationContext(), "QR-Code genereerd", Toast.LENGTH_LONG).show();
+                                    sendSnackbar("QR-Code gegenereerd!", findViewById(android.R.id.content));
                                     //ProgressSpiner onzichtbaar maken
                                     prgQRCode.setVisibility(View.INVISIBLE);
 
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "FOUT " + jsonReponse.getString("success"), Toast.LENGTH_LONG).show();
+                                    Log.e("ERROR", "onResponse: " + jsonReponse.getString("success"));
+                                    sendSnackbar("Er ging iets fout!", findViewById(android.R.id.content));
+                                    LVQRCode.setImageBitmap(null);
                                     //ProgressSpiner onzichtbaar maken
                                     prgQRCode.setVisibility(View.INVISIBLE);
                                 }
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
-                                Toast.makeText(getApplicationContext(), "ERROR 5" + " " +  e.getMessage(), Toast.LENGTH_LONG).show();
+                                sendSnackbar("Er ging iets fout!", findViewById(android.R.id.content));
+                                LVQRCode.setImageBitmap(null);
                                 //ProgressSpiner onzichtbaar maken
                                 prgQRCode.setVisibility(View.INVISIBLE);
                             }

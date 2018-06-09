@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -76,6 +77,10 @@ public class BetalingManueel extends AppCompatActivity {
         btnBevestigen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //Toetsenbord sluiten
+                InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 
                 if (!(txtGebruikersnaam.getText().toString().equals(""))) {
                     if(!(txtBedrag.getText().toString().equals(""))) {
