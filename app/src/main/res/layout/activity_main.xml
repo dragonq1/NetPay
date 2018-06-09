@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
+    android:gravity="top|center"
     android:orientation="vertical"
-    android:paddingBottom="180dp"
     tools:context="com.example.quinten.netpay.MainActivity">
 
 
@@ -46,7 +45,7 @@
         app:pb_colorNormal="@color/ColorGreySoft"
         app:pb_colorPressed="@color/ColorGreyHard"
         app:pb_colorProgress="@color/ColorGreyHard"
-        app:pb_textComplete="Ingelogd!" />
+        app:pb_textComplete="Aangemeld!" />
 
 
 

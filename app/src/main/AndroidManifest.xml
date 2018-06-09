@@ -29,21 +29,30 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Menu" />
-        <activity android:name=".Registreren" />
-        <activity android:name=".Account" />
-        <activity android:name=".WachtwoordVeranderen" />
-        <activity android:name=".Transacties" />
-        <activity android:name=".Betalen" />
-        <activity android:name=".BetalingManueel" />
-        <activity android:name=".OntvangenInfo" />
+        <activity android:name=".Menu"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Registreren"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Account"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WachtwoordVeranderen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Transacties"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Betalen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BetalingManueel"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OntvangenInfo"
+            android:screenOrientation="portrait"/>
 
         <service
             android:name="com.example.quinten.services.MyFirebaseMessagingService">

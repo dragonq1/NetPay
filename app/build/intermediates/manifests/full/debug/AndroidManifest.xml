@@ -55,21 +55,39 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
-        <activity android:name="com.example.quinten.netpay.MainActivity" >
+        <activity
+            android:name="com.example.quinten.netpay.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.quinten.netpay.Menu" />
-        <activity android:name="com.example.quinten.netpay.Registreren" />
-        <activity android:name="com.example.quinten.netpay.Account" />
-        <activity android:name="com.example.quinten.netpay.WachtwoordVeranderen" />
-        <activity android:name="com.example.quinten.netpay.Transacties" />
-        <activity android:name="com.example.quinten.netpay.Betalen" />
-        <activity android:name="com.example.quinten.netpay.BetalingManueel" />
-        <activity android:name="com.example.quinten.netpay.OntvangenInfo" />
+        <activity
+            android:name="com.example.quinten.netpay.Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.quinten.netpay.Registreren"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.quinten.netpay.Account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.quinten.netpay.WachtwoordVeranderen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.quinten.netpay.Transacties"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.quinten.netpay.Betalen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.quinten.netpay.BetalingManueel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.quinten.netpay.OntvangenInfo"
+            android:screenOrientation="portrait" />
 
         <service android:name="com.example.quinten.services.MyFirebaseMessagingService" >
             <intent-filter>
